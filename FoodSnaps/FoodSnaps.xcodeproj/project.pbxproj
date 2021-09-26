@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A96F4FC857BF15A3A2C503DC /* Pods_FoodSnaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEA9FFA2BD2E055E0575500 /* Pods_FoodSnaps.framework */; };
+		F142B7CE26FF15C200A031DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142B7CD26FF15C200A031DF /* AppDelegate.swift */; };
+		F142B7D026FF15C200A031DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142B7CF26FF15C200A031DF /* SceneDelegate.swift */; };
+		F142B7D226FF15C200A031DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142B7D126FF15C200A031DF /* ViewController.swift */; };
+		F142B7D526FF15C200A031DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F142B7D326FF15C200A031DF /* Main.storyboard */; };
+		F142B7D726FF15C300A031DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F142B7D626FF15C300A031DF /* Images.xcassets */; };
+		F142B7DA26FF15C300A031DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F142B7D826FF15C300A031DF /* LaunchScreen.storyboard */; };
+		F142B7E326FF2F7000A031DF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F142B7E226FF2F7000A031DF /* Colors.xcassets */; };
+		F142B7F32700524E00A031DF /* AppDelegate+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142B7F22700524E00A031DF /* AppDelegate+Keyboard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4EBB33C58DCDC87250B917D9 /* Pods-FoodSnaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSnaps.debug.xcconfig"; path = "Target Support Files/Pods-FoodSnaps/Pods-FoodSnaps.debug.xcconfig"; sourceTree = "<group>"; };
+		670096E3FD7816F33BE94942 /* Pods-FoodSnaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSnaps.release.xcconfig"; path = "Target Support Files/Pods-FoodSnaps/Pods-FoodSnaps.release.xcconfig"; sourceTree = "<group>"; };
+		9FEA9FFA2BD2E055E0575500 /* Pods_FoodSnaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodSnaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F142B7CA26FF15C200A031DF /* FoodSnaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSnaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F142B7CD26FF15C200A031DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F142B7CF26FF15C200A031DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F142B7D126FF15C200A031DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F142B7D426FF15C200A031DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F142B7D626FF15C300A031DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F142B7D926FF15C300A031DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F142B7DB26FF15C300A031DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F142B7E226FF2F7000A031DF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F142B7F22700524E00A031DF /* AppDelegate+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Keyboard.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F142B7C726FF15C200A031DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96F4FC857BF15A3A2C503DC /* Pods_FoodSnaps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0CDEA2509E5EE74E1DC6B5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EBB33C58DCDC87250B917D9 /* Pods-FoodSnaps.debug.xcconfig */,
+				670096E3FD7816F33BE94942 /* Pods-FoodSnaps.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DAE3CD443819A7F1D908AE91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FEA9FFA2BD2E055E0575500 /* Pods_FoodSnaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F142B7C126FF15C200A031DF = {
+			isa = PBXGroup;
+			children = (
+				F142B7CC26FF15C200A031DF /* FoodSnaps */,
+				F142B7CB26FF15C200A031DF /* Products */,
+				B0CDEA2509E5EE74E1DC6B5B /* Pods */,
+				DAE3CD443819A7F1D908AE91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F142B7CB26FF15C200A031DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F142B7CA26FF15C200A031DF /* FoodSnaps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F142B7CC26FF15C200A031DF /* FoodSnaps */ = {
+			isa = PBXGroup;
+			children = (
+				F142B7F1270051FA00A031DF /* Common */,
+				F142B7CD26FF15C200A031DF /* AppDelegate.swift */,
+				F142B7CF26FF15C200A031DF /* SceneDelegate.swift */,
+				F142B7D126FF15C200A031DF /* ViewController.swift */,
+				F142B7D326FF15C200A031DF /* Main.storyboard */,
+				F142B7D626FF15C300A031DF /* Images.xcassets */,
+				F142B7D826FF15C300A031DF /* LaunchScreen.storyboard */,
+				F142B7DB26FF15C300A031DF /* Info.plist */,
+				F142B7E226FF2F7000A031DF /* Colors.xcassets */,
+			);
+			path = FoodSnaps;
+			sourceTree = "<group>";
+		};
+		F142B7F1270051FA00A031DF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F142B7F52700525500A031DF /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F142B7F52700525500A031DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F142B7F22700524E00A031DF /* AppDelegate+Keyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F142B7C926FF15C200A031DF /* FoodSnaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F142B7DE26FF15C300A031DF /* Build configuration list for PBXNativeTarget "FoodSnaps" */;
+			buildPhases = (
+				A250680E8F12395B018C22FD /* [CP] Check Pods Manifest.lock */,
+				F142B7C626FF15C200A031DF /* Sources */,
+				F142B7C726FF15C200A031DF /* Frameworks */,
+				F142B7C826FF15C200A031DF /* Resources */,
+				156D685C6D9DC314977F150A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodSnaps;
+			productName = FoodSnaps;
+			productReference = F142B7CA26FF15C200A031DF /* FoodSnaps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F142B7C226FF15C200A031DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F142B7C926FF15C200A031DF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = F142B7C526FF15C200A031DF /* Build configuration list for PBXProject "FoodSnaps" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F142B7C126FF15C200A031DF;
+			productRefGroup = F142B7CB26FF15C200A031DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F142B7C926FF15C200A031DF /* FoodSnaps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F142B7C826FF15C200A031DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F142B7DA26FF15C300A031DF /* LaunchScreen.storyboard in Resources */,
+				F142B7E326FF2F7000A031DF /* Colors.xcassets in Resources */,
+				F142B7D726FF15C300A031DF /* Images.xcassets in Resources */,
+				F142B7D526FF15C200A031DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		156D685C6D9DC314977F150A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodSnaps/Pods-FoodSnaps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodSnaps/Pods-FoodSnaps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodSnaps/Pods-FoodSnaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A250680E8F12395B018C22FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodSnaps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F142B7C626FF15C200A031DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F142B7D226FF15C200A031DF /* ViewController.swift in Sources */,
+				F142B7F32700524E00A031DF /* AppDelegate+Keyboard.swift in Sources */,
+				F142B7CE26FF15C200A031DF /* AppDelegate.swift in Sources */,
+				F142B7D026FF15C200A031DF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F142B7D326FF15C200A031DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F142B7D426FF15C200A031DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F142B7D826FF15C300A031DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F142B7D926FF15C300A031DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F142B7DC26FF15C300A031DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F142B7DD26FF15C300A031DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F142B7DF26FF15C300A031DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EBB33C58DCDC87250B917D9 /* Pods-FoodSnaps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9X9KBNL8U;
+				INFOPLIST_FILE = FoodSnaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bixplora.FoodSnaps.FoodSnaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F142B7E026FF15C300A031DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670096E3FD7816F33BE94942 /* Pods-FoodSnaps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9X9KBNL8U;
+				INFOPLIST_FILE = FoodSnaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bixplora.FoodSnaps.FoodSnaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F142B7C526FF15C200A031DF /* Build configuration list for PBXProject "FoodSnaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F142B7DC26FF15C300A031DF /* Debug */,
+				F142B7DD26FF15C300A031DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F142B7DE26FF15C300A031DF /* Build configuration list for PBXNativeTarget "FoodSnaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F142B7DF26FF15C300A031DF /* Debug */,
+				F142B7E026FF15C300A031DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F142B7C226FF15C200A031DF /* Project object */;
+}
