@@ -7,6 +7,11 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController {    
+    override func viewWillAppear(_ animated: Bool) {
+        configUI()
+    }
     
+    private func configUI() {
+    }
 }

@@ -7,4 +7,6 @@ target 'FoodSnaps' do
 
   # Pods for FoodSnaps
   pod 'IQKeyboardManagerSwift'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end

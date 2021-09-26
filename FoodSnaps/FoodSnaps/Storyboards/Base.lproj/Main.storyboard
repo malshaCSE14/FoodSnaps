@@ -10,7 +10,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="zuv-i8-Xtb">
             <objects>
-                <tabBarController id="ub5-NE-qWU" sceneMemberID="viewController">
+                <tabBarController id="ub5-NE-qWU" customClass="TabBarController" customModule="FoodSnaps" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JKL-IQ-Bs7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -70,7 +70,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="heart.fill" catalog="system" width="32" height="32"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>

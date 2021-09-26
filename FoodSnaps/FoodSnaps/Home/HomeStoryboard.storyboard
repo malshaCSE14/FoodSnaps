@@ -16,20 +16,66 @@
                     <view key="view" contentMode="scaleToFill" id="hhl-2A-ygc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v62-Px-0ka">
+                                <rect key="frame" x="15" y="44" width="384" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Snaps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgk-Ya-i9z">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="50"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jai-nS-Gbh"/>
+                                </constraints>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C0-zz-a2d">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAi-dW-Typ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="rEF-uM-Txu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iAi-dW-Typ" firstAttribute="width" secondItem="Bni-dS-1wx" secondAttribute="width" id="1KP-yL-q3F"/>
+                                    <constraint firstItem="iAi-dW-Typ" firstAttribute="bottom" secondItem="y5z-DS-lwG" secondAttribute="bottom" id="JBp-ub-uau"/>
+                                    <constraint firstItem="iAi-dW-Typ" firstAttribute="leading" secondItem="y5z-DS-lwG" secondAttribute="leading" id="XPo-xL-Fhd"/>
+                                    <constraint firstItem="iAi-dW-Typ" firstAttribute="top" secondItem="y5z-DS-lwG" secondAttribute="top" id="ZVv-5N-fef"/>
+                                    <constraint firstItem="iAi-dW-Typ" firstAttribute="trailing" secondItem="y5z-DS-lwG" secondAttribute="trailing" id="tLA-Mg-Pbm"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="y5z-DS-lwG"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Bni-dS-1wx"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tWs-M1-mOt"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tWs-M1-mOt" firstAttribute="bottom" secondItem="1C0-zz-a2d" secondAttribute="bottom" id="16L-Xt-4FM"/>
+                            <constraint firstItem="1C0-zz-a2d" firstAttribute="top" secondItem="v62-Px-0ka" secondAttribute="bottom" id="6oM-AW-KYF"/>
+                            <constraint firstItem="tWs-M1-mOt" firstAttribute="trailing" secondItem="v62-Px-0ka" secondAttribute="trailing" constant="15" id="77b-aZ-zGw"/>
+                            <constraint firstItem="v62-Px-0ka" firstAttribute="top" secondItem="tWs-M1-mOt" secondAttribute="top" id="aQo-Ls-aKl"/>
+                            <constraint firstItem="tWs-M1-mOt" firstAttribute="trailing" secondItem="1C0-zz-a2d" secondAttribute="trailing" id="gBu-GS-HRG"/>
+                            <constraint firstItem="v62-Px-0ka" firstAttribute="leading" secondItem="tWs-M1-mOt" secondAttribute="leading" constant="15" id="j9y-9Q-J9n"/>
+                            <constraint firstItem="1C0-zz-a2d" firstAttribute="leading" secondItem="tWs-M1-mOt" secondAttribute="leading" id="y8a-XE-sjn"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="2dv-K8-IMV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFP-hA-1qw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-797" y="-615"/>
+            <point key="canvasLocation" x="-797.10144927536237" y="-615.40178571428567"/>
         </scene>
     </scenes>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
