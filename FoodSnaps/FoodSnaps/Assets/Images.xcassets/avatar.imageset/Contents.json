@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "456-4569194_ninja-png-image-ninja-avatar-transparent-png-3.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "456-4569194_ninja-png-image-ninja-avatar-transparent-png-5.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "456-4569194_ninja-png-image-ninja-avatar-transparent-png-4.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
