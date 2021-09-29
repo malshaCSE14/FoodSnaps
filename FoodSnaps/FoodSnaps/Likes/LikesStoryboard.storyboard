@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ywg-67-5pU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,10 +16,64 @@
                     <view key="view" contentMode="scaleToFill" id="3MT-mQ-Emg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6c-1U-RbH">
+                                <rect key="frame" x="0.0" y="89" width="414" height="807"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uof-go-BAC">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="807"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="HQU-6D-Ows">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="807"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="HQU-6D-Ows" firstAttribute="top" secondItem="Uof-go-BAC" secondAttribute="top" id="Qnd-yt-84l"/>
+                                            <constraint firstAttribute="bottom" secondItem="HQU-6D-Ows" secondAttribute="bottom" id="oWV-m5-ReW"/>
+                                            <constraint firstAttribute="trailing" secondItem="HQU-6D-Ows" secondAttribute="trailing" id="qTn-BE-1K4"/>
+                                            <constraint firstItem="HQU-6D-Ows" firstAttribute="leading" secondItem="Uof-go-BAC" secondAttribute="leading" id="sSg-73-XUR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Uof-go-BAC" firstAttribute="leading" secondItem="9Lh-Jf-AZR" secondAttribute="leading" id="6wq-2q-uhv"/>
+                                    <constraint firstItem="Uof-go-BAC" firstAttribute="width" secondItem="ryD-fM-Xwd" secondAttribute="width" id="E8u-mz-pRt"/>
+                                    <constraint firstItem="Uof-go-BAC" firstAttribute="bottom" secondItem="9Lh-Jf-AZR" secondAttribute="bottom" id="JZa-sY-7PM"/>
+                                    <constraint firstItem="Uof-go-BAC" firstAttribute="height" secondItem="s6c-1U-RbH" secondAttribute="height" priority="250" id="aHr-ts-LGd"/>
+                                    <constraint firstItem="Uof-go-BAC" firstAttribute="top" secondItem="9Lh-Jf-AZR" secondAttribute="top" id="bp4-H4-SSY"/>
+                                    <constraint firstItem="Uof-go-BAC" firstAttribute="trailing" secondItem="9Lh-Jf-AZR" secondAttribute="trailing" id="kYi-wC-L51"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="9Lh-Jf-AZR"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ryD-fM-Xwd"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y58-ZL-piW">
+                                <rect key="frame" x="15" y="59" width="384" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OTg-6a-SXa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="s2X-hy-Ay3"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s6c-1U-RbH" firstAttribute="top" secondItem="Y58-ZL-piW" secondAttribute="bottom" id="DhI-Pk-gZ0"/>
+                            <constraint firstItem="s2X-hy-Ay3" firstAttribute="trailing" secondItem="Y58-ZL-piW" secondAttribute="trailing" constant="15" id="H2g-ES-Ym6"/>
+                            <constraint firstItem="s6c-1U-RbH" firstAttribute="trailing" secondItem="s2X-hy-Ay3" secondAttribute="trailing" id="LTn-la-Idz"/>
+                            <constraint firstItem="s6c-1U-RbH" firstAttribute="leading" secondItem="s2X-hy-Ay3" secondAttribute="leading" id="P83-hD-6Rn"/>
+                            <constraint firstItem="Y58-ZL-piW" firstAttribute="leading" secondItem="s2X-hy-Ay3" secondAttribute="leading" constant="15" id="UpT-xq-aZc"/>
+                            <constraint firstItem="Y58-ZL-piW" firstAttribute="top" secondItem="s2X-hy-Ay3" secondAttribute="top" constant="15" id="td1-5M-3wZ"/>
+                            <constraint firstAttribute="bottom" secondItem="s6c-1U-RbH" secondAttribute="bottom" id="xbr-wr-TMs"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" id="NtJ-qE-yrU"/>
+                    <connections>
+                        <outlet property="tblLikes" destination="HQU-6D-Ows" id="33I-In-Pfu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbe-ez-cW2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,9 +81,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="heart.fill" catalog="system" width="32" height="32"/>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

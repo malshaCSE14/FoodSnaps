@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SnapCollectionViewCell" id="adJ-Lb-Ez3" customClass="SnapCollectionViewCell" customModule="FoodSnaps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="316"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kvL-lm-5oR">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="316"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qfe-vI-pzr">
+                        <rect key="frame" x="0.0" y="0.0" width="316" height="316"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list.bullet.below.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aa4-fR-ead">
+                        <rect key="frame" x="291" y="6.5" width="20" height="17.5"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="GMu-d9-YkU"/>
+                            <constraint firstAttribute="height" constant="20" id="wCQ-uF-BPS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qfe-vI-pzr" firstAttribute="top" secondItem="kvL-lm-5oR" secondAttribute="top" id="5dv-S5-VsQ"/>
+                    <constraint firstAttribute="bottom" secondItem="qfe-vI-pzr" secondAttribute="bottom" id="AGP-fn-pod"/>
+                    <constraint firstItem="qfe-vI-pzr" firstAttribute="leading" secondItem="kvL-lm-5oR" secondAttribute="leading" id="FSz-mE-IyY"/>
+                    <constraint firstAttribute="trailing" secondItem="qfe-vI-pzr" secondAttribute="trailing" id="PFt-ZT-qfo"/>
+                    <constraint firstItem="aa4-fR-ead" firstAttribute="top" secondItem="kvL-lm-5oR" secondAttribute="top" constant="5" id="Zrf-sy-yZn"/>
+                    <constraint firstAttribute="trailing" secondItem="aa4-fR-ead" secondAttribute="trailing" constant="5" id="zhN-oe-tm7"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="316" height="316"/>
+            <connections>
+                <outlet property="icon" destination="aa4-fR-ead" id="k0P-rU-U03"/>
+                <outlet property="image" destination="qfe-vI-pzr" id="61w-NC-Gjg"/>
+            </connections>
+            <point key="canvasLocation" x="92.753623188405811" y="-49.553571428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="list.bullet.below.rectangle" catalog="system" width="128" height="112"/>
+        <image name="placeholder" width="450" height="248.5"/>
+    </resources>
+</document>

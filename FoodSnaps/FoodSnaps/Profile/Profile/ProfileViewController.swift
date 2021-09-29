@@ -9,19 +9,59 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     @IBOutlet weak var imgProfilePic: UIImageView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidLoad() {
         configUI()
     }
     
     private func configUI() {
         configProfilePic()
+        configCollectionView()
+        configureSegmentedControl()
     }
     
     private func configProfilePic() {
-        imgProfilePic.layer.cornerRadius = 40
+        imgProfilePic.layer.cornerRadius = 50
         imgProfilePic.layer.borderWidth = 2
         imgProfilePic.layer.borderColor = UIColor.init(named: "avatarBorder")?.cgColor
         imgProfilePic.layer.masksToBounds = true
+    }
+    
+    private func configureSegmentedControl() {
+        segmentedControl.selectedSegmentIndex = 0
+    }
+    
+    private func configCollectionView() {
+        collectionView.delegate = self
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 4, left: 0, bottom: 10, right: 0)
+        let screenWidth = UIScreen.main.bounds.width - 18
+        layout.itemSize = CGSize(width: screenWidth / 3, height: screenWidth / 3)
+        layout.minimumInteritemSpacing = 4
+        layout.minimumLineSpacing = 4
+        collectionView.collectionViewLayout = layout
+        let nib = UINib(nibName: SnapCollectionViewCell.cellIdentifier, bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: SnapCollectionViewCell.cellIdentifier)
+    }
+}
+
+extension ProfileViewController: UICollectionViewDelegate {
+    
+}
+
+extension ProfileViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SnapCollectionViewCell.cellIdentifier, for: indexPath) as! SnapCollectionViewCell
+        return cell
     }
 }

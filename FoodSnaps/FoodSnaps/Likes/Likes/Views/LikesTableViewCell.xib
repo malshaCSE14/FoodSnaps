@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LikesTableViewCell" rowHeight="87" id="fYA-vM-EFj" customClass="LikesTableViewCell" customModule="FoodSnaps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fYA-vM-EFj" id="r4U-YN-Gl3">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="TXs-95-YXa">
+                        <rect key="frame" x="15" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="A3O-ZS-duB"/>
+                            <constraint firstAttribute="width" constant="60" id="orc-Se-6Vu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T15-zh-KdN">
+                        <rect key="frame" x="90" y="10" width="219" height="136.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Yasiru Priyadarshana">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045642274798769478" green="0.0045642274798769478" blue="0.0045642274798769478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi-Bold"/>
+                                    <font key="NSOriginalFont" size="13" name="Thonburi-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" ">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045642274798769478" green="0.0045642274798769478" blue="0.0045642274798769478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="started following you">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045642274798769478" green="0.0045642274798769478" blue="0.0045642274798769478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" ">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045642274798769478" green="0.0045642274798769478" blue="0.0045642274798769478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="1d ">
+                                <attributes>
+                                    <color key="NSColor" red="0.70122998170178352" green="0.70122998170178352" blue="0.70122998170178352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Yasiru Priyadarshana">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" started following you ">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="1d ">
+                                <attributes>
+                                    <color key="NSColor" red="0.70122998170178352" green="0.70122998170178352" blue="0.70122998170178352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Yasiru Priyadarshana">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" started following you ">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="1d ">
+                                <attributes>
+                                    <color key="NSColor" red="0.70122998170178352" green="0.70122998170178352" blue="0.70122998170178352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Yasiru Priyadarshana">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" started following you ">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="1d ">
+                                <attributes>
+                                    <color key="NSColor" red="0.70122998170178352" green="0.70122998170178352" blue="0.70122998170178352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Yasiru Priyadarshana">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" started following you ">
+                                <attributes>
+                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="1d">
+                                <attributes>
+                                    <color key="NSColor" red="0.70122998170178352" green="0.70122998170178352" blue="0.70122998170178352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="cQi-OE-z9L">
+                        <rect key="frame" x="339" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="K28-Jp-nhh"/>
+                            <constraint firstAttribute="width" constant="60" id="gWW-Ec-CZ5"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGT-Fk-sJe">
+                        <rect key="frame" x="319" y="15" width="80" height="35"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="mzA-gw-kvT"/>
+                            <constraint firstAttribute="width" constant="80" id="sYQ-Ah-Zof"/>
+                        </constraints>
+                        <state key="normal" title="Following">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cQi-OE-z9L" secondAttribute="trailing" constant="15" id="6vb-N2-0j6"/>
+                    <constraint firstAttribute="trailing" secondItem="uGT-Fk-sJe" secondAttribute="trailing" constant="15" id="AMA-Cv-ixB"/>
+                    <constraint firstItem="cQi-OE-z9L" firstAttribute="top" secondItem="r4U-YN-Gl3" secondAttribute="top" constant="10" id="IqB-xh-Utb"/>
+                    <constraint firstItem="T15-zh-KdN" firstAttribute="top" secondItem="r4U-YN-Gl3" secondAttribute="top" constant="10" id="KLn-Pm-lrg"/>
+                    <constraint firstAttribute="bottom" secondItem="T15-zh-KdN" secondAttribute="bottom" constant="15" id="NTw-06-bpz"/>
+                    <constraint firstItem="T15-zh-KdN" firstAttribute="leading" secondItem="TXs-95-YXa" secondAttribute="trailing" constant="15" id="TtM-nQ-CEQ"/>
+                    <constraint firstAttribute="bottom" secondItem="TXs-95-YXa" secondAttribute="bottom" constant="10" id="bid-rv-COo"/>
+                    <constraint firstItem="uGT-Fk-sJe" firstAttribute="leading" secondItem="T15-zh-KdN" secondAttribute="trailing" constant="10" id="mhz-Q2-lrE"/>
+                    <constraint firstItem="TXs-95-YXa" firstAttribute="leading" secondItem="r4U-YN-Gl3" secondAttribute="leading" constant="15" id="nRz-fJ-UmO"/>
+                    <constraint firstItem="TXs-95-YXa" firstAttribute="top" secondItem="r4U-YN-Gl3" secondAttribute="top" constant="10" id="nlL-jP-kJu"/>
+                    <constraint firstItem="uGT-Fk-sJe" firstAttribute="top" secondItem="r4U-YN-Gl3" secondAttribute="top" constant="15" id="w9Y-y0-4yc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnFollow" destination="uGT-Fk-sJe" id="KCU-Ei-w1i"/>
+                <outlet property="imgPost" destination="cQi-OE-z9L" id="eHO-sb-hdn"/>
+                <outlet property="imgProfilePic" destination="TXs-95-YXa" id="w69-qP-rnP"/>
+                <outlet property="lblDescription" destination="T15-zh-KdN" id="lrE-K1-eUn"/>
+            </connections>
+            <point key="canvasLocation" x="189.85507246376812" y="15.401785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="430" height="435.5"/>
+        <image name="placeholder" width="450" height="248.5"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
