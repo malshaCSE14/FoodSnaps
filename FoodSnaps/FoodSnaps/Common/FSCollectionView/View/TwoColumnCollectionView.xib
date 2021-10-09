@@ -11,37 +11,37 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoColumnCollectionView" customModule="FoodSnaps" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="mMV-hq-bc5" id="XyD-JJ-3tb"/>
+                <outlet property="collectionView" destination="RYP-hA-1rp" id="bEA-cI-oOL"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z9O-aR-gCF">
+        <view contentMode="scaleToFill" id="aZA-en-ZFB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-            <autoresizingMask key="autoresizingMask"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mMV-hq-bc5">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RYP-hA-1rp">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewLayout key="collectionViewLayout" id="TLo-Yn-jP8" customClass="FSCollectionViewLayout" customModule="FoodSnaps" customModuleProvider="target"/>
+                    <collectionViewLayout key="collectionViewLayout" id="CiL-qU-oiB" customClass="FSCollectionViewLayout" customModule="FoodSnaps" customModuleProvider="target"/>
                 </collectionView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="35G-cn-Kz1"/>
-            <color key="backgroundColor" systemColor="systemPinkColor"/>
+            <viewLayoutGuide key="safeArea" id="PQr-qR-Z2O"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="mMV-hq-bc5" secondAttribute="trailing" id="7G7-jd-Cll"/>
-                <constraint firstItem="mMV-hq-bc5" firstAttribute="top" secondItem="Z9O-aR-gCF" secondAttribute="top" id="Ezm-nP-ceE"/>
-                <constraint firstItem="mMV-hq-bc5" firstAttribute="leading" secondItem="Z9O-aR-gCF" secondAttribute="leading" id="keY-SV-5bo"/>
-                <constraint firstAttribute="bottom" secondItem="mMV-hq-bc5" secondAttribute="bottom" id="qYM-lW-zXM"/>
+                <constraint firstItem="PQr-qR-Z2O" firstAttribute="bottom" secondItem="RYP-hA-1rp" secondAttribute="bottom" id="9zi-vw-0bt"/>
+                <constraint firstItem="RYP-hA-1rp" firstAttribute="leading" secondItem="PQr-qR-Z2O" secondAttribute="leading" id="cK5-6k-1aZ"/>
+                <constraint firstItem="PQr-qR-Z2O" firstAttribute="trailing" secondItem="RYP-hA-1rp" secondAttribute="trailing" id="exC-L5-6QL"/>
+                <constraint firstItem="RYP-hA-1rp" firstAttribute="top" secondItem="PQr-qR-Z2O" secondAttribute="top" id="z17-Hw-VMe"/>
             </constraints>
-            <point key="canvasLocation" x="-165" y="-41"/>
+            <point key="canvasLocation" x="175" y="100"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

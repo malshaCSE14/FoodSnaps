@@ -35,8 +35,8 @@ class TwoColumnCollectionView: UIView {
     func nibSetup() {
         guard let view = loadViewFromNib() else { return }
         view.frame = self.bounds
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(view)
-        print(collectionView.collectionViewLayout)
         let nib = UINib(nibName: "FSCollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "FSCollectionViewCell")
         collectionView.dataSource = self
