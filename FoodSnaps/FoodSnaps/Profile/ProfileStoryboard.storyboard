@@ -141,9 +141,9 @@
                                                 </constraints>
                                                 <segments>
                                                     <segment title="All"/>
-                                                    <segment title="" image="photo.on.rectangle" catalog="system"/>
-                                                    <segment title="" image="video" catalog="system"/>
-                                                    <segment title="" image="list.bullet.below.rectangle" catalog="system"/>
+                                                    <segment title="" image="photos"/>
+                                                    <segment title="" image="videos"/>
+                                                    <segment title="" image="recipe"/>
                                                 </segments>
                                             </segmentedControl>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ld0-hi-QWb">
@@ -265,12 +265,12 @@
     </scenes>
     <resources>
         <image name="avatar" width="430" height="435.5"/>
-        <image name="list.bullet.below.rectangle" catalog="system" width="128" height="112"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="photo.on.rectangle" catalog="system" width="128" height="96"/>
+        <image name="photos" width="32" height="32"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="recipe" width="25" height="25"/>
         <image name="settings" width="32" height="32"/>
-        <image name="video" catalog="system" width="128" height="83"/>
+        <image name="videos" width="25" height="25"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

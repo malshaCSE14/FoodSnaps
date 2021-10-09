@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,52 +18,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v62-Px-0ka">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Snaps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgk-Ya-i9z">
                                 <rect key="frame" x="15" y="44" width="384" height="50"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Snaps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgk-Ya-i9z">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="50"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="jai-nS-Gbh"/>
+                                    <constraint firstAttribute="height" constant="50" id="P0G-q7-9vm"/>
                                 </constraints>
-                            </stackView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C0-zz-a2d">
-                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAi-dW-Typ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="rEF-uM-Txu"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3hy-th-Zjd">
+                                <rect key="frame" x="0.0" y="194" width="414" height="668"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewLayout key="collectionViewLayout" id="aeb-fF-YJT"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Da-Sl-B7g">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zqy-U2-eYh">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JXm-yN-6KD" customClass="TwoColumnCollectionView" customModule="FoodSnaps" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="94" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="iAi-dW-Typ" firstAttribute="width" secondItem="Bni-dS-1wx" secondAttribute="width" id="1KP-yL-q3F"/>
-                                    <constraint firstItem="iAi-dW-Typ" firstAttribute="bottom" secondItem="y5z-DS-lwG" secondAttribute="bottom" id="JBp-ub-uau"/>
-                                    <constraint firstItem="iAi-dW-Typ" firstAttribute="leading" secondItem="y5z-DS-lwG" secondAttribute="leading" id="XPo-xL-Fhd"/>
-                                    <constraint firstItem="iAi-dW-Typ" firstAttribute="top" secondItem="y5z-DS-lwG" secondAttribute="top" id="ZVv-5N-fef"/>
-                                    <constraint firstItem="iAi-dW-Typ" firstAttribute="trailing" secondItem="y5z-DS-lwG" secondAttribute="trailing" id="tLA-Mg-Pbm"/>
+                                    <constraint firstAttribute="height" constant="100" id="Wzb-h0-owg"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="y5z-DS-lwG"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Bni-dS-1wx"/>
-                            </scrollView>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tWs-M1-mOt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tWs-M1-mOt" firstAttribute="bottom" secondItem="1C0-zz-a2d" secondAttribute="bottom" id="16L-Xt-4FM"/>
-                            <constraint firstItem="1C0-zz-a2d" firstAttribute="top" secondItem="v62-Px-0ka" secondAttribute="bottom" id="6oM-AW-KYF"/>
-                            <constraint firstItem="tWs-M1-mOt" firstAttribute="trailing" secondItem="v62-Px-0ka" secondAttribute="trailing" constant="15" id="77b-aZ-zGw"/>
-                            <constraint firstItem="v62-Px-0ka" firstAttribute="top" secondItem="tWs-M1-mOt" secondAttribute="top" id="aQo-Ls-aKl"/>
-                            <constraint firstItem="tWs-M1-mOt" firstAttribute="trailing" secondItem="1C0-zz-a2d" secondAttribute="trailing" id="gBu-GS-HRG"/>
-                            <constraint firstItem="v62-Px-0ka" firstAttribute="leading" secondItem="tWs-M1-mOt" secondAttribute="leading" constant="15" id="j9y-9Q-J9n"/>
-                            <constraint firstItem="1C0-zz-a2d" firstAttribute="leading" secondItem="tWs-M1-mOt" secondAttribute="leading" id="y8a-XE-sjn"/>
+                            <constraint firstItem="3hy-th-Zjd" firstAttribute="top" secondItem="JXm-yN-6KD" secondAttribute="bottom" id="9uL-Rl-sqi"/>
+                            <constraint firstItem="tWs-M1-mOt" firstAttribute="trailing" secondItem="3hy-th-Zjd" secondAttribute="trailing" id="LPu-Rp-XnV"/>
+                            <constraint firstItem="JXm-yN-6KD" firstAttribute="top" secondItem="zgk-Ya-i9z" secondAttribute="bottom" id="PRp-ny-srz"/>
+                            <constraint firstItem="tWs-M1-mOt" firstAttribute="trailing" secondItem="JXm-yN-6KD" secondAttribute="trailing" id="Rdl-eh-uGZ"/>
+                            <constraint firstItem="zgk-Ya-i9z" firstAttribute="leading" secondItem="tWs-M1-mOt" secondAttribute="leading" constant="15" id="oFg-kN-7hB"/>
+                            <constraint firstItem="JXm-yN-6KD" firstAttribute="leading" secondItem="tWs-M1-mOt" secondAttribute="leading" id="rFJ-X2-Wzm"/>
+                            <constraint firstItem="tWs-M1-mOt" firstAttribute="bottom" secondItem="3hy-th-Zjd" secondAttribute="bottom" id="tXV-OR-wGn"/>
+                            <constraint firstItem="3hy-th-Zjd" firstAttribute="leading" secondItem="tWs-M1-mOt" secondAttribute="leading" id="uEl-Kg-q01"/>
+                            <constraint firstItem="tWs-M1-mOt" firstAttribute="trailing" secondItem="zgk-Ya-i9z" secondAttribute="trailing" constant="15" id="uMs-tL-NDH"/>
+                            <constraint firstItem="zgk-Ya-i9z" firstAttribute="top" secondItem="tWs-M1-mOt" secondAttribute="top" id="z18-Yo-f0m"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="2dv-K8-IMV"/>

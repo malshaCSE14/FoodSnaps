@@ -36,11 +36,11 @@ class ProfileViewController: UIViewController {
     private func configCollectionView() {
         collectionView.delegate = self
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 4, left: 0, bottom: 10, right: 0)
-        let screenWidth = UIScreen.main.bounds.width - 18
-        layout.itemSize = CGSize(width: screenWidth / 3, height: screenWidth / 3)
-        layout.minimumInteritemSpacing = 4
-        layout.minimumLineSpacing = 4
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
+        let screenWidth = UIScreen.main.bounds.width - 30
+        layout.itemSize = CGSize(width: screenWidth / 2, height: screenWidth / 2)
+        layout.minimumInteritemSpacing = 10
+        layout.minimumLineSpacing = 10
         collectionView.collectionViewLayout = layout
         let nib = UINib(nibName: SnapCollectionViewCell.cellIdentifier, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: SnapCollectionViewCell.cellIdentifier)
@@ -62,6 +62,7 @@ extension ProfileViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SnapCollectionViewCell.cellIdentifier, for: indexPath) as! SnapCollectionViewCell
+        cell.layer.cornerRadius = 10
         return cell
     }
 }

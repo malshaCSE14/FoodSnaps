@@ -20,8 +20,8 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qfe-vI-pzr">
                         <rect key="frame" x="0.0" y="0.0" width="316" height="316"/>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list.bullet.below.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aa4-fR-ead">
-                        <rect key="frame" x="291" y="6.5" width="20" height="17.5"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe" translatesAutoresizingMaskIntoConstraints="NO" id="aa4-fR-ead">
+                        <rect key="frame" x="291" y="5" width="20" height="20"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="GMu-d9-YkU"/>
@@ -47,7 +47,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="list.bullet.below.rectangle" catalog="system" width="128" height="112"/>
         <image name="placeholder" width="450" height="248.5"/>
+        <image name="recipe" width="25" height="25"/>
     </resources>
 </document>
