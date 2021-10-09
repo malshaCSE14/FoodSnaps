@@ -50,19 +50,3 @@ class ProfileViewController: UIViewController {
 extension ProfileViewController: UICollectionViewDelegate {
     
 }
-
-extension ProfileViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SnapCollectionViewCell.cellIdentifier, for: indexPath) as! SnapCollectionViewCell
-        cell.layer.cornerRadius = 10
-        return cell
-    }
-}

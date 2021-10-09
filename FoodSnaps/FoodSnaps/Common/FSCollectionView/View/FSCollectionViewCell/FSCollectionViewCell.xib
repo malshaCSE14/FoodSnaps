@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FSCollectionViewCell" id="N83-Fy-4nO" customClass="FSCollectionViewCell" customModule="FoodSnaps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="G7S-Fy-ZOc">
+                <rect key="frame" x="0.0" y="0.0" width="204" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OA5-j8-KPH">
+                        <rect key="frame" x="0.0" y="0.0" width="204" height="209"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FS-ey-cKq">
+                        <rect key="frame" x="0.0" y="209" width="204" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZI-xK-EJM">
+                        <rect key="frame" x="0.0" y="229.5" width="204" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="launchScreen"/>
+                <constraints>
+                    <constraint firstItem="hZI-xK-EJM" firstAttribute="top" secondItem="4FS-ey-cKq" secondAttribute="bottom" id="GOG-vV-sIh"/>
+                    <constraint firstAttribute="trailing" secondItem="hZI-xK-EJM" secondAttribute="trailing" id="Gue-q0-ogh"/>
+                    <constraint firstAttribute="trailing" secondItem="4FS-ey-cKq" secondAttribute="trailing" id="IYD-cG-iyM"/>
+                    <constraint firstItem="OA5-j8-KPH" firstAttribute="top" secondItem="G7S-Fy-ZOc" secondAttribute="top" id="Il3-Io-UIt"/>
+                    <constraint firstItem="4FS-ey-cKq" firstAttribute="top" secondItem="OA5-j8-KPH" secondAttribute="bottom" id="KBY-CP-6FM"/>
+                    <constraint firstItem="hZI-xK-EJM" firstAttribute="leading" secondItem="G7S-Fy-ZOc" secondAttribute="leading" id="Ty2-WO-U5W"/>
+                    <constraint firstItem="OA5-j8-KPH" firstAttribute="leading" secondItem="G7S-Fy-ZOc" secondAttribute="leading" id="ViY-ey-X0g"/>
+                    <constraint firstItem="4FS-ey-cKq" firstAttribute="leading" secondItem="G7S-Fy-ZOc" secondAttribute="leading" id="blR-dU-9so"/>
+                    <constraint firstAttribute="trailing" secondItem="OA5-j8-KPH" secondAttribute="trailing" id="g8a-v8-VHd"/>
+                    <constraint firstAttribute="bottom" secondItem="hZI-xK-EJM" secondAttribute="bottom" id="mK4-Ci-yEt"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="204" height="267"/>
+            <connections>
+                <outlet property="captionLabel" destination="4FS-ey-cKq" id="7Aj-ZH-vPA"/>
+                <outlet property="commentLabel" destination="hZI-xK-EJM" id="TQT-gp-xfT"/>
+                <outlet property="containerView" destination="G7S-Fy-ZOc" id="3xE-J2-DDV"/>
+                <outlet property="imageView" destination="OA5-j8-KPH" id="YPe-Uv-tZ3"/>
+            </connections>
+            <point key="canvasLocation" x="-44.927536231884062" y="-114.84375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="launchScreen">
+            <color red="1" green="1" blue="0.50199997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
