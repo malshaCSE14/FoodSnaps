@@ -44,6 +44,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="2dv-K8-IMV"/>
+                    <connections>
+                        <outlet property="collectionView" destination="OC2-mt-HqI" id="4yd-5R-kEa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFP-hA-1qw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -31,6 +31,8 @@
 		F157BF6227119755001732E5 /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F157BF6027119755001732E5 /* Photos.xcassets */; };
 		F157BF662711A58C001732E5 /* FSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F157BF652711A58C001732E5 /* FSCollectionViewCell.swift */; };
 		F157BF692711A63D001732E5 /* FSCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F157BF682711A63D001732E5 /* FSCollectionViewCell.xib */; };
+		F157BFC12711E96E001732E5 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F157BFC02711E96E001732E5 /* PreviewViewController.swift */; };
+		F157BFC52711E977001732E5 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F157BFC42711E977001732E5 /* PreviewViewController.xib */; };
 		F18EA78827045F0C00E1A6EA /* SnapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18EA78727045F0C00E1A6EA /* SnapCollectionViewCell.swift */; };
 		F18EA78B270466FA00E1A6EA /* SnapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18EA78A270466FA00E1A6EA /* SnapCollectionViewCell.xib */; };
 		F18EA790270485D800E1A6EA /* LikesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18EA78F270485D800E1A6EA /* LikesTableViewCell.swift */; };
@@ -71,6 +73,8 @@
 		F157BF6027119755001732E5 /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Photos.xcassets; sourceTree = "<group>"; };
 		F157BF652711A58C001732E5 /* FSCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCollectionViewCell.swift; sourceTree = "<group>"; };
 		F157BF682711A63D001732E5 /* FSCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSCollectionViewCell.xib; sourceTree = "<group>"; };
+		F157BFC02711E96E001732E5 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		F157BFC42711E977001732E5 /* PreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
 		F18EA78727045F0C00E1A6EA /* SnapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCollectionViewCell.swift; sourceTree = "<group>"; };
 		F18EA78A270466FA00E1A6EA /* SnapCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnapCollectionViewCell.xib; sourceTree = "<group>"; };
 		F18EA78F270485D800E1A6EA /* LikesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesTableViewCell.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 		F142B80127005EE200A031DF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F157BFBF2711E93D001732E5 /* Preview */,
 				F142B8272700749B00A031DF /* HomeStoryboard.storyboard */,
 				F142B816270061D600A031DF /* Dashboard */,
 			);
@@ -290,6 +295,15 @@
 				F157BF682711A63D001732E5 /* FSCollectionViewCell.xib */,
 			);
 			path = FSCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		F157BFBF2711E93D001732E5 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				F157BFC02711E96E001732E5 /* PreviewViewController.swift */,
+				F157BFC42711E977001732E5 /* PreviewViewController.xib */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 		F18EA78627045EED00E1A6EA /* Views */ = {
@@ -407,6 +421,7 @@
 				F18EA78B270466FA00E1A6EA /* SnapCollectionViewCell.xib in Resources */,
 				F142B7D726FF15C300A031DF /* Images.xcassets in Resources */,
 				F142B8302700758400A031DF /* LikesStoryboard.storyboard in Resources */,
+				F157BFC52711E977001732E5 /* PreviewViewController.xib in Resources */,
 				F18EA7A62704D7AB00E1A6EA /* GoogleService-Info.plist in Resources */,
 				F142B7D526FF15C200A031DF /* Main.storyboard in Resources */,
 				F142B8422700780000A031DF /* ProfileStoryboard.storyboard in Resources */,
@@ -480,6 +495,7 @@
 				F18EA81627087E8C00E1A6EA /* HomeCollectionLayout.swift in Sources */,
 				F142B834270075C000A031DF /* ProfileViewController.swift in Sources */,
 				F142B7D026FF15C200A031DF /* SceneDelegate.swift in Sources */,
+				F157BFC12711E96E001732E5 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

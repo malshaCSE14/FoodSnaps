@@ -7,9 +7,14 @@
 
 import UIKit
 
+protocol FSPresentDelegate: AnyObject {
+    func presentDetailView()
+}
+
 class TwoColumnCollectionView: UIView {
     let nibName = "TwoColumnCollectionView"
     var photos = Photo.allPhotos()
+    weak var delegate: FSPresentDelegate?
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -40,6 +45,7 @@ class TwoColumnCollectionView: UIView {
         let nib = UINib(nibName: "FSCollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "FSCollectionViewCell")
         collectionView.dataSource = self
+        collectionView.delegate = self
         if let layout = collectionView.collectionViewLayout as? FSCollectionViewLayout {
             layout.delegate = self
         }
@@ -51,7 +57,6 @@ extension TwoColumnCollectionView: FSCollectionLayoutDelegate {
         return photos[indexPath.item].image.size.height
     }
 }
-
 
 extension TwoColumnCollectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -65,7 +70,12 @@ extension TwoColumnCollectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FSCollectionViewCell", for: indexPath) as! FSCollectionViewCell
         cell.photo = photos[indexPath.item]
-        cell.layer.cornerRadius = 10
         return cell
+    }
+}
+
+extension TwoColumnCollectionView: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.presentDetailView()
     }
 }

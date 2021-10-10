@@ -34,7 +34,6 @@ class ProfileViewController: UIViewController {
     }
     
     private func configCollectionView() {
-        collectionView.delegate = self
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
         let screenWidth = UIScreen.main.bounds.width - 30
@@ -47,6 +46,18 @@ class ProfileViewController: UIViewController {
     }
 }
 
-extension ProfileViewController: UICollectionViewDelegate {
+extension ProfileViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SnapCollectionViewCell.cellIdentifier, for: indexPath) as! SnapCollectionViewCell
+        cell.layer.cornerRadius = 10
+        return cell
+    }
 }
