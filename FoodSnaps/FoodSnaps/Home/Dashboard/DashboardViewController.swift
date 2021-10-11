@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class DashboardViewController: UIViewController {
     let previewView: PreviewViewController? = nil
-    
+
     @IBOutlet weak var collectionView: TwoColumnCollectionView!
     
     override func viewDidLoad() {
@@ -21,9 +23,6 @@ class DashboardViewController: UIViewController {
 extension DashboardViewController: FSPresentDelegate {
     func presentDetailView() {
         let previewView = PreviewViewController(nibName: "PreviewViewController", bundle: nil)
-        let navController = UINavigationController(rootViewController: previewView)
-        navController.navigationBar.isHidden = true
-        navController.modalPresentationStyle = .fullScreen
-        self.present(navController, animated:true, completion: nil)
+        self.navigationController?.pushViewController(previewView, animated: true)
     }
 }

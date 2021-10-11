@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6xP-Sd-c6E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oZs-6P-RWv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,6 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="HsC-EV-7Ko">
+            <objects>
+                <navigationController id="oZs-6P-RWv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dRT-ly-6Li">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6xP-Sd-c6E" kind="relationship" relationship="rootViewController" id="JL3-Zd-2FW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hw-Yr-tWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1891" y="221"/>
+        </scene>
         <!--Profile View Controller-->
         <scene sceneID="AyS-qC-vmc">
             <objects>
@@ -19,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2g7-PY-xiW">
-                                <rect key="frame" x="363" y="49" width="36" height="36"/>
+                                <rect key="frame" x="363" y="93" width="36" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="fhH-7j-c7c"/>
                                     <constraint firstAttribute="width" constant="36" id="pWi-cR-IPS"/>
@@ -32,7 +48,7 @@
                                 </state>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7X-yU-HMu">
-                                <rect key="frame" x="0.0" y="85" width="414" height="777"/>
+                                <rect key="frame" x="0.0" y="129" width="414" height="733"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfU-ph-JwM">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
@@ -221,7 +237,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="9ij-MF-d1b"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ms4-QM-1OJ">
-                                <rect key="frame" x="317" y="49" width="36" height="36"/>
+                                <rect key="frame" x="317" y="93" width="36" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="cQF-RU-4CW"/>
                                     <constraint firstAttribute="width" constant="36" id="iTs-rX-TDo"/>
@@ -248,6 +264,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person.fill" catalog="system" id="Mif-dq-IwR"/>
+                    <navigationItem key="navigationItem" id="5c5-lA-Nbb"/>
                     <connections>
                         <outlet property="collectionView" destination="ld0-hi-QWb" id="NyW-0c-Znj"/>
                         <outlet property="imgProfilePic" destination="Rqr-O4-qul" id="Zae-Hf-oet"/>
