@@ -10,6 +10,10 @@ import RxSwift
 import RxCocoa
 
 class PreviewViewController: UIViewController {
+    // MARK: - Rx variable
+    private let disposeBag = DisposeBag()
+    
+    // MARK: IB Outlets
     @IBOutlet weak var imageViewHeight: NSLayoutConstraint!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var lblName: UILabel!
@@ -26,7 +30,7 @@ class PreviewViewController: UIViewController {
     
     private func configUI() {
         let ratio = (image.image?.size.width ?? 0) / (image.image?.size.height ?? 1)
-        let newHeight = image.frame.width / ratio
+        let newHeight = UIScreen.main.bounds.width / ratio
         imageViewHeight.constant = newHeight
         image.layoutIfNeeded()
         
@@ -36,10 +40,16 @@ class PreviewViewController: UIViewController {
     }
     
     private func bindUI() {
-//        collectionViewHeight.constant = collectionView.collectionView.contentSize.height
+        collectionView.collectionView.rx
+            .observe(CGSize.self, "contentSize")
+            .distinctUntilChanged()
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] size in
+                self?.collectionViewHeight.constant = size?.height ?? 0
+            }).disposed(by: disposeBag)
     }
     
     @IBAction func didTapBackButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
 }

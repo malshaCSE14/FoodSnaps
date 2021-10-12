@@ -18,6 +18,16 @@ class TwoColumnCollectionView: UIView {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBInspectable public var scrollable: Bool {
+        set (scrollable) {
+            self.collectionView.isScrollEnabled = scrollable
+        }
+        
+        get {
+            return self.collectionView.isScrollEnabled
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
