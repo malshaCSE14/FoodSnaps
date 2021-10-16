@@ -6,11 +6,20 @@
 //
 
 import UIKit
+import RxSwift
 
 class ProfileViewController: UIViewController {
+    // MARK: Properties
+    let viewModel = ProfileViewModel()
+    
+    // MARK: - Rx variable
+    private let disposeBag = DisposeBag()
+    
+    // MARK: IB outlets
     @IBOutlet weak var imgProfilePic: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         configUI()
@@ -20,6 +29,8 @@ class ProfileViewController: UIViewController {
         configProfilePic()
         configCollectionView()
         configureSegmentedControl()
+        viewModel.paginator = Paginator<String>(provider: viewModel)
+        configPagination()
     }
     
     private func configProfilePic() {
@@ -43,6 +54,28 @@ class ProfileViewController: UIViewController {
         collectionView.collectionViewLayout = layout
         let nib = UINib(nibName: SnapCollectionViewCell.cellIdentifier, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: SnapCollectionViewCell.cellIdentifier)
+    }
+    
+    // MARK: Pagination
+    private func configPagination() {
+
+//        self.refreshControl?.rx.controlEvent(.valueChanged)
+//            .map { [weak self] _ in
+//                self?.viewModel.paginator!.pageIndex = 0
+//            }
+//            .bind(to: viewModel.paginator!.refreshTrigger)
+//            .disposed(by: disposeBag)
+//
+//        viewModel.paginator!.loading.asObservable()
+//            .observeOn(MainScheduler.instance)
+//            .subscribe(onNext: { [weak self] isLoading in
+//                if !isLoading {
+//                    self?.refreshControl?.endRefreshing()
+//                }
+//            }).disposed(by: disposeBag)
+
+        scrollView.reachedBottom
+            .bind(to: viewModel.paginator!.loadNextPageTrigger).disposed(by: disposeBag)
     }
 }
 

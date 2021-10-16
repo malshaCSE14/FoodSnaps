@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A96F4FC857BF15A3A2C503DC /* Pods_FoodSnaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEA9FFA2BD2E055E0575500 /* Pods_FoodSnaps.framework */; };
+		F1057A63271ACA1700F64E4F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1057A62271ACA1700F64E4F /* ProfileViewModel.swift */; };
 		F139373B2700CE7200DF9D5A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F139373A2700CE7200DF9D5A /* TabBarController.swift */; };
 		F142B7CE26FF15C200A031DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142B7CD26FF15C200A031DF /* AppDelegate.swift */; };
 		F142B7D026FF15C200A031DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142B7CF26FF15C200A031DF /* SceneDelegate.swift */; };
@@ -51,6 +52,7 @@
 		4EBB33C58DCDC87250B917D9 /* Pods-FoodSnaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSnaps.debug.xcconfig"; path = "Target Support Files/Pods-FoodSnaps/Pods-FoodSnaps.debug.xcconfig"; sourceTree = "<group>"; };
 		670096E3FD7816F33BE94942 /* Pods-FoodSnaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSnaps.release.xcconfig"; path = "Target Support Files/Pods-FoodSnaps/Pods-FoodSnaps.release.xcconfig"; sourceTree = "<group>"; };
 		9FEA9FFA2BD2E055E0575500 /* Pods_FoodSnaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodSnaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1057A62271ACA1700F64E4F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		F139373A2700CE7200DF9D5A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F142B7CA26FF15C200A031DF /* FoodSnaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSnaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F142B7CD26FF15C200A031DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 			children = (
 				F18EA78627045EED00E1A6EA /* Views */,
 				F142B833270075C000A031DF /* ProfileViewController.swift */,
+				F1057A62271ACA1700F64E4F /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				F142B7CE26FF15C200A031DF /* AppDelegate.swift in Sources */,
 				F18EA81A2709D79300E1A6EA /* TwoColumnCollectionView.swift in Sources */,
 				F18EA797270494B200E1A6EA /* ActivityItem.swift in Sources */,
+				F1057A63271ACA1700F64E4F /* ProfileViewModel.swift in Sources */,
 				F142B834270075C000A031DF /* ProfileViewController.swift in Sources */,
 				F142B7D026FF15C200A031DF /* SceneDelegate.swift in Sources */,
 				F157BFC12711E96E001732E5 /* PreviewViewController.swift in Sources */,
