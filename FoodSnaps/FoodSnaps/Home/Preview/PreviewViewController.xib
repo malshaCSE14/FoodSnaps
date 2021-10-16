@@ -18,6 +18,7 @@
                 <outlet property="imageViewHeight" destination="2ob-hR-wOt" id="6R8-vx-pw2"/>
                 <outlet property="lblName" destination="1jV-RQ-vmB" id="yuc-gy-Q44"/>
                 <outlet property="profilePic" destination="2Uz-eW-cQn" id="HTT-su-maj"/>
+                <outlet property="scrollView" destination="X4k-j9-XrH" id="ByB-oO-Kkz"/>
                 <outlet property="view" destination="cL5-q4-cDF" id="3IG-xf-Lxv"/>
             </connections>
         </placeholder>

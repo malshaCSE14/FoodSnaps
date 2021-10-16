@@ -10,6 +10,8 @@ import RxSwift
 import RxCocoa
 
 class DashboardViewController: UIViewController {
+    // MARK: - Properties
+    var viewModel: DashboardViewModel!
     let previewView: PreviewViewController? = nil
 
     @IBOutlet weak var collectionView: TwoColumnCollectionView!

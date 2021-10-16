@@ -10,6 +10,9 @@ import RxSwift
 import RxCocoa
 
 class PreviewViewController: UIViewController {
+    // MARK: - Properties
+    var viewModel = PreviewViewModel()
+    
     // MARK: - Rx variable
     private let disposeBag = DisposeBag()
     
@@ -21,11 +24,14 @@ class PreviewViewController: UIViewController {
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
     @IBOutlet weak var collectionView: TwoColumnCollectionView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
         bindUI()
+        viewModel.paginator = Paginator<String>(provider: viewModel)
+        configPagination()
     }
     
     private func configUI() {
@@ -47,6 +53,28 @@ class PreviewViewController: UIViewController {
             .subscribe(onNext: { [weak self] size in
                 self?.collectionViewHeight.constant = size?.height ?? 0
             }).disposed(by: disposeBag)
+    }
+    
+    // MARK: Pagination
+    private func configPagination() {
+
+//        self.refreshControl?.rx.controlEvent(.valueChanged)
+//            .map { [weak self] _ in
+//                self?.viewModel.paginator!.pageIndex = 0
+//            }
+//            .bind(to: viewModel.paginator!.refreshTrigger)
+//            .disposed(by: disposeBag)
+//
+//        viewModel.paginator!.loading.asObservable()
+//            .observeOn(MainScheduler.instance)
+//            .subscribe(onNext: { [weak self] isLoading in
+//                if !isLoading {
+//                    self?.refreshControl?.endRefreshing()
+//                }
+//            }).disposed(by: disposeBag)
+
+        scrollView.reachedBottom
+            .bind(to: viewModel.paginator!.loadNextPageTrigger).disposed(by: disposeBag)
     }
     
     @IBAction func didTapBackButton(_ sender: Any) {
