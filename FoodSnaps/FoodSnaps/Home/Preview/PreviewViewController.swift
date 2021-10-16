@@ -10,7 +10,7 @@ import RxSwift
 
 class PreviewViewController: UIViewController {
     // MARK: - Properties
-    var viewModel = PreviewViewModel()
+    private var viewModel = PreviewViewModel()
     
     // MARK: - Rx variable
     private let disposeBag = DisposeBag()

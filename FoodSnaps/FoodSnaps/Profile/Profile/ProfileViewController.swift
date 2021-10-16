@@ -10,7 +10,7 @@ import RxSwift
 
 class ProfileViewController: UIViewController {
     // MARK: Properties
-    let viewModel = ProfileViewModel()
+    private let viewModel = ProfileViewModel()
     
     // MARK: - Rx variable
     private let disposeBag = DisposeBag()

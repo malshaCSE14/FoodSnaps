@@ -9,7 +9,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class LikesViewController: UIViewController {
+class LikesViewController: UIViewController, UITableViewDelegate {
+    // MARK: IB outlets
     @IBOutlet weak var tblLikes: UITableView!
     @IBOutlet weak var tblLikesHeight: NSLayoutConstraint!
     
@@ -17,11 +18,14 @@ class LikesViewController: UIViewController {
     private let disposeBag = DisposeBag()
     
     // MARK: Properties
+    private let viewModel = LikesViewModel()
     private let estimatedRowHeight = 74.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configTable()
+        viewModel.paginator = Paginator<String>(provider: viewModel)
+        configPagination()
         bindData()
     }
     
@@ -30,6 +34,28 @@ class LikesViewController: UIViewController {
         tblLikes.register(nib, forCellReuseIdentifier: LikesTableViewCell.cellIdentifier)
         tblLikes.rowHeight = UITableView.automaticDimension
         tblLikes.estimatedRowHeight = CGFloat(self.estimatedRowHeight)
+    }
+    
+    // MARK: Pagination
+    private func configPagination() {
+
+//        self.refreshControl?.rx.controlEvent(.valueChanged)
+//            .map { [weak self] _ in
+//                self?.viewModel.paginator!.pageIndex = 0
+//            }
+//            .bind(to: viewModel.paginator!.refreshTrigger)
+//            .disposed(by: disposeBag)
+//
+//        viewModel.paginator!.loading.asObservable()
+//            .observeOn(MainScheduler.instance)
+//            .subscribe(onNext: { [weak self] isLoading in
+//                if !isLoading {
+//                    self?.refreshControl?.endRefreshing()
+//                }
+//            }).disposed(by: disposeBag)
+                
+        tblLikes.reachedBottom
+            .bind(to: viewModel.paginator!.loadNextPageTrigger).disposed(by: disposeBag)
     }
     
     private func bindData() {
