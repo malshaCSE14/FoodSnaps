@@ -20,7 +20,7 @@ class LikesViewController: UIViewController, UITableViewDelegate {
     // MARK: Properties
     private let viewModel = LikesViewModel()
     private let estimatedRowHeight = 74.0
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configTable()
@@ -39,22 +39,22 @@ class LikesViewController: UIViewController, UITableViewDelegate {
     
     // MARK: Pagination
     private func configPagination() {
-
-//        self.refreshControl?.rx.controlEvent(.valueChanged)
-//            .map { [weak self] _ in
-//                self?.viewModel.paginator!.pageIndex = 0
-//            }
-//            .bind(to: viewModel.paginator!.refreshTrigger)
-//            .disposed(by: disposeBag)
-//
-//        viewModel.paginator!.loading.asObservable()
-//            .observeOn(MainScheduler.instance)
-//            .subscribe(onNext: { [weak self] isLoading in
-//                if !isLoading {
-//                    self?.refreshControl?.endRefreshing()
-//                }
-//            }).disposed(by: disposeBag)
-                
+        
+        //        self.refreshControl?.rx.controlEvent(.valueChanged)
+        //            .map { [weak self] _ in
+        //                self?.viewModel.paginator!.pageIndex = 0
+        //            }
+        //            .bind(to: viewModel.paginator!.refreshTrigger)
+        //            .disposed(by: disposeBag)
+        //
+        //        viewModel.paginator!.loading.asObservable()
+        //            .observeOn(MainScheduler.instance)
+        //            .subscribe(onNext: { [weak self] isLoading in
+        //                if !isLoading {
+        //                    self?.refreshControl?.endRefreshing()
+        //                }
+        //            }).disposed(by: disposeBag)
+        
         tblLikes.reachedBottom
             .bind(to: viewModel.paginator!.loadNextPageTrigger).disposed(by: disposeBag)
     }
@@ -82,14 +82,14 @@ class LikesViewController: UIViewController, UITableViewDelegate {
         }.disposed(by: disposeBag)
         
         
-//        tblLikes.rx
-//            .observe(CGSize.self, "contentSize")
-//            .distinctUntilChanged()
-//            .observe(on: MainScheduler.instance)
-//            .subscribe(onNext: { [weak self] size in
-//                if (size?.height ?? 0.0) > 0 {
-//                    self?.tblLikesHeight.constant = (size?.height ?? 0) - 5
-//                }
-//            }).disposed(by: disposeBag)
+        //        tblLikes.rx
+        //            .observe(CGSize.self, "contentSize")
+        //            .distinctUntilChanged()
+        //            .observe(on: MainScheduler.instance)
+        //            .subscribe(onNext: { [weak self] size in
+        //                if (size?.height ?? 0.0) > 0 {
+        //                    self?.tblLikesHeight.constant = (size?.height ?? 0) - 5
+        //                }
+        //            }).disposed(by: disposeBag)
     }
 }

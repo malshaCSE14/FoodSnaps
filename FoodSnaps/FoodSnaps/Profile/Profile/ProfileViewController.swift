@@ -25,8 +25,12 @@ class ProfileViewController: UIViewController {
         configUI()
     }
     
-    private func configUI() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    private func configUI() {
         configProfilePic()
         configCollectionView()
         configureSegmentedControl()
@@ -93,5 +97,11 @@ extension ProfileViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SnapCollectionViewCell.cellIdentifier, for: indexPath) as! SnapCollectionViewCell
         cell.layer.cornerRadius = 10
         return cell
+    }
+    
+    @IBAction func didTapSettings(_ sender: Any) {
+        let settingsVC = SettingsViewController()
+        self.navigationController?.pushViewController(settingsVC, animated: true)
+//        self.present(settingsVC, animated: true, completion: nil)
     }
 }

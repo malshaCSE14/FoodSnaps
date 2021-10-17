@@ -36,6 +36,8 @@
 		F157BFC12711E96E001732E5 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F157BFC02711E96E001732E5 /* PreviewViewController.swift */; };
 		F157BFC52711E977001732E5 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F157BFC42711E977001732E5 /* PreviewViewController.xib */; };
 		F17079E4271BD0D900CDBABE /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17079E3271BD0D900CDBABE /* AppEnums.swift */; };
+		F17079E8271C0BE000CDBABE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17079E7271C0BE000CDBABE /* SettingsViewController.swift */; };
+		F17079EC271C0BEC00CDBABE /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17079EB271C0BEC00CDBABE /* SettingsViewController.xib */; };
 		F18EA78827045F0C00E1A6EA /* SnapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18EA78727045F0C00E1A6EA /* SnapCollectionViewCell.swift */; };
 		F18EA78B270466FA00E1A6EA /* SnapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18EA78A270466FA00E1A6EA /* SnapCollectionViewCell.xib */; };
 		F18EA790270485D800E1A6EA /* LikesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18EA78F270485D800E1A6EA /* LikesTableViewCell.swift */; };
@@ -84,6 +86,8 @@
 		F157BFC02711E96E001732E5 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		F157BFC42711E977001732E5 /* PreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
 		F17079E3271BD0D900CDBABE /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
+		F17079E7271C0BE000CDBABE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F17079EB271C0BEC00CDBABE /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		F18EA78727045F0C00E1A6EA /* SnapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCollectionViewCell.swift; sourceTree = "<group>"; };
 		F18EA78A270466FA00E1A6EA /* SnapCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnapCollectionViewCell.xib; sourceTree = "<group>"; };
 		F18EA78F270485D800E1A6EA /* LikesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesTableViewCell.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 			children = (
 				F142B8412700780000A031DF /* ProfileStoryboard.storyboard */,
 				F142B832270075A700A031DF /* Profile */,
+				F17079E6271C0BC100CDBABE /* Settings */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -324,6 +329,15 @@
 			path = Preview;
 			sourceTree = "<group>";
 		};
+		F17079E6271C0BC100CDBABE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F17079E7271C0BE000CDBABE /* SettingsViewController.swift */,
+				F17079EB271C0BEC00CDBABE /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		F18EA78627045EED00E1A6EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +442,7 @@
 				F142B82D2700753C00A031DF /* DiscoverStoryboard.storyboard in Resources */,
 				F142B8282700749B00A031DF /* HomeStoryboard.storyboard in Resources */,
 				F157BF692711A63D001732E5 /* FSCollectionViewCell.xib in Resources */,
+				F17079EC271C0BEC00CDBABE /* SettingsViewController.xib in Resources */,
 				F18EA78B270466FA00E1A6EA /* SnapCollectionViewCell.xib in Resources */,
 				F142B7D726FF15C300A031DF /* Images.xcassets in Resources */,
 				F142B8302700758400A031DF /* LikesStoryboard.storyboard in Resources */,
@@ -496,6 +511,7 @@
 				F142B7F32700524E00A031DF /* AppDelegate+Keyboard.swift in Sources */,
 				F157BF662711A58C001732E5 /* FSCollectionViewCell.swift in Sources */,
 				F157BF4527114716001732E5 /* FSCollectionViewLayout.swift in Sources */,
+				F17079E8271C0BE000CDBABE /* SettingsViewController.swift in Sources */,
 				F139373B2700CE7200DF9D5A /* TabBarController.swift in Sources */,
 				F18EA790270485D800E1A6EA /* LikesTableViewCell.swift in Sources */,
 				F17079E4271BD0D900CDBABE /* AppEnums.swift in Sources */,

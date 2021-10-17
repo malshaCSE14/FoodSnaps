@@ -46,6 +46,9 @@
                                 <state key="normal" image="settings">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapSettings:" destination="6xP-Sd-c6E" eventType="touchUpInside" id="ecV-mn-D5W"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7X-yU-HMu">
                                 <rect key="frame" x="0.0" y="129" width="414" height="733"/>
