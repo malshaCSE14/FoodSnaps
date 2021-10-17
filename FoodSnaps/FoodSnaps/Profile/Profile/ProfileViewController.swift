@@ -26,6 +26,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func configUI() {
+        self.navigationController?.navigationBar.isHidden = true
         configProfilePic()
         configCollectionView()
         configureSegmentedControl()

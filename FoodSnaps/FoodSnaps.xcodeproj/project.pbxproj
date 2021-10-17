@@ -35,6 +35,7 @@
 		F157BF692711A63D001732E5 /* FSCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F157BF682711A63D001732E5 /* FSCollectionViewCell.xib */; };
 		F157BFC12711E96E001732E5 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F157BFC02711E96E001732E5 /* PreviewViewController.swift */; };
 		F157BFC52711E977001732E5 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F157BFC42711E977001732E5 /* PreviewViewController.xib */; };
+		F17079E4271BD0D900CDBABE /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17079E3271BD0D900CDBABE /* AppEnums.swift */; };
 		F18EA78827045F0C00E1A6EA /* SnapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18EA78727045F0C00E1A6EA /* SnapCollectionViewCell.swift */; };
 		F18EA78B270466FA00E1A6EA /* SnapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18EA78A270466FA00E1A6EA /* SnapCollectionViewCell.xib */; };
 		F18EA790270485D800E1A6EA /* LikesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18EA78F270485D800E1A6EA /* LikesTableViewCell.swift */; };
@@ -82,6 +83,7 @@
 		F157BF682711A63D001732E5 /* FSCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSCollectionViewCell.xib; sourceTree = "<group>"; };
 		F157BFC02711E96E001732E5 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		F157BFC42711E977001732E5 /* PreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
+		F17079E3271BD0D900CDBABE /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
 		F18EA78727045F0C00E1A6EA /* SnapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCollectionViewCell.swift; sourceTree = "<group>"; };
 		F18EA78A270466FA00E1A6EA /* SnapCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnapCollectionViewCell.xib; sourceTree = "<group>"; };
 		F18EA78F270485D800E1A6EA /* LikesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesTableViewCell.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				F13937392700CE5B00DF9D5A /* TabBar */,
 				F142B7F52700525500A031DF /* Extensions */,
 				F1F0E9102715675300511DB6 /* Paginator.swift */,
+				F17079E3271BD0D900CDBABE /* AppEnums.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				F157BF4527114716001732E5 /* FSCollectionViewLayout.swift in Sources */,
 				F139373B2700CE7200DF9D5A /* TabBarController.swift in Sources */,
 				F18EA790270485D800E1A6EA /* LikesTableViewCell.swift in Sources */,
+				F17079E4271BD0D900CDBABE /* AppEnums.swift in Sources */,
 				F1F0E90E2715667D00511DB6 /* UIScrollView+Utils.swift in Sources */,
 				F1F0E9142715677500511DB6 /* DashboardViewModel.swift in Sources */,
 				F1F0E917271568B900511DB6 /* PreviewViewModel.swift in Sources */,
