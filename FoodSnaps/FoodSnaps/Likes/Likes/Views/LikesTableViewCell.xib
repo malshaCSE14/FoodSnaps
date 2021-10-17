@@ -10,11 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LikesTableViewCell" rowHeight="87" id="fYA-vM-EFj" customClass="LikesTableViewCell" customModule="FoodSnaps" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LikesTableViewCell" rowHeight="173" id="fYA-vM-EFj" customClass="LikesTableViewCell" customModule="FoodSnaps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fYA-vM-EFj" id="r4U-YN-Gl3">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="TXs-95-YXa">
@@ -25,7 +25,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T15-zh-KdN">
-                        <rect key="frame" x="90" y="10" width="219" height="136.5"/>
+                        <rect key="frame" x="90" y="10" width="219" height="135"/>
                         <attributedString key="attributedText">
                             <fragment content="Yasiru Priyadarshana">
                                 <attributes>
@@ -177,7 +177,6 @@
                     <constraint firstItem="T15-zh-KdN" firstAttribute="top" secondItem="r4U-YN-Gl3" secondAttribute="top" constant="10" id="KLn-Pm-lrg"/>
                     <constraint firstAttribute="bottom" secondItem="T15-zh-KdN" secondAttribute="bottom" constant="15" id="NTw-06-bpz"/>
                     <constraint firstItem="T15-zh-KdN" firstAttribute="leading" secondItem="TXs-95-YXa" secondAttribute="trailing" constant="15" id="TtM-nQ-CEQ"/>
-                    <constraint firstAttribute="bottom" secondItem="TXs-95-YXa" secondAttribute="bottom" constant="10" id="bid-rv-COo"/>
                     <constraint firstItem="uGT-Fk-sJe" firstAttribute="leading" secondItem="T15-zh-KdN" secondAttribute="trailing" constant="10" id="mhz-Q2-lrE"/>
                     <constraint firstItem="TXs-95-YXa" firstAttribute="leading" secondItem="r4U-YN-Gl3" secondAttribute="leading" constant="15" id="nRz-fJ-UmO"/>
                     <constraint firstItem="TXs-95-YXa" firstAttribute="top" secondItem="r4U-YN-Gl3" secondAttribute="top" constant="10" id="nlL-jP-kJu"/>
@@ -190,7 +189,7 @@
                 <outlet property="imgProfilePic" destination="TXs-95-YXa" id="w69-qP-rnP"/>
                 <outlet property="lblDescription" destination="T15-zh-KdN" id="lrE-K1-eUn"/>
             </connections>
-            <point key="canvasLocation" x="189.85507246376812" y="15.401785714285714"/>
+            <point key="canvasLocation" x="189.85507246376812" y="44.196428571428569"/>
         </tableViewCell>
     </objects>
     <resources>

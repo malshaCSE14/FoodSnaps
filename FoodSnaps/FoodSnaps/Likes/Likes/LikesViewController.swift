@@ -31,6 +31,7 @@ class LikesViewController: UIViewController, UITableViewDelegate {
     
     private func configTable() {
         let nib = UINib(nibName: LikesTableViewCell.cellIdentifier, bundle: nil)
+        tblLikes.delegate = self
         tblLikes.register(nib, forCellReuseIdentifier: LikesTableViewCell.cellIdentifier)
         tblLikes.rowHeight = UITableView.automaticDimension
         tblLikes.estimatedRowHeight = CGFloat(self.estimatedRowHeight)
@@ -64,11 +65,20 @@ class LikesViewController: UIViewController, UITableViewDelegate {
         let activity3 = ActivityItem(id: "3")
         let elements = [activity1, activity2, activity3, activity1, activity2, activity3, activity1, activity2, activity3, activity1, activity2, activity3]
         Observable.just(elements).bind(to: tblLikes.rx.items) { tableView, row, _ in
+            tableView.invalidateIntrinsicContentSize()
+            tableView.layoutIfNeeded()
             let indexPath = IndexPath(row: row, section: 0)
-            let cell = tableView.dequeueReusableCell(withIdentifier:  LikesTableViewCell.cellIdentifier, for: indexPath) as! LikesTableViewCell
-            cell.layoutIfNeeded()
-            cell.set(descriptionText: "Yasiru Priyadarshana started following you 1d Yasiru Priyadarshana started following you 1d ")
-            return cell
+            if indexPath.row == 0 {
+                let cell = UITableViewCell()
+                cell.textLabel?.text = "Your activities"
+                cell.accessoryType = .disclosureIndicator
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier:  LikesTableViewCell.cellIdentifier, for: indexPath) as! LikesTableViewCell
+                cell.layoutIfNeeded()
+                cell.set(descriptionText: "Yasiru Priyadarshana started following you 1d Yasiru Priyadarshana started following you 1d ")
+                return cell
+            }
         }.disposed(by: disposeBag)
         
         
