@@ -31,6 +31,7 @@ class PreviewViewController: UIViewController {
         bindUI()
         viewModel.paginator = Paginator<String>(provider: viewModel)
         configPagination()
+        collectionView.delegate = self
     }
     
     private func configUI() {
@@ -78,5 +79,12 @@ class PreviewViewController: UIViewController {
     
     @IBAction func didTapBackButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+}
+
+extension PreviewViewController: FSPresentDelegate {
+    func presentDetailView() {
+        let previewView = PreviewViewController(nibName: "PreviewViewController", bundle: nil)
+        self.navigationController?.pushViewController(previewView, animated: true)
     }
 }

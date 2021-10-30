@@ -12,13 +12,14 @@ import RxCocoa
 class DashboardViewController: UIViewController {
     // MARK: - Properties
     var viewModel: DashboardViewModel!
-    let previewView: PreviewViewController? = nil
-
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: TwoColumnCollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
+        searchBar.layer.borderWidth = 1
+        searchBar.layer.borderColor = UIColor.white.cgColor
         collectionView.delegate = self
     }
 }

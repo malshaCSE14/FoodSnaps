@@ -29,121 +29,31 @@
                         <attributedString key="attributedText">
                             <fragment content="Yasiru Priyadarshana">
                                 <attributes>
-                                    <color key="NSColor" red="0.0045642274798769478" green="0.0045642274798769478" blue="0.0045642274798769478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi-Bold"/>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="13" name="Thonburi"/>
                                     <font key="NSOriginalFont" size="13" name="Thonburi-Bold"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
                             <fragment content=" ">
                                 <attributes>
-                                    <color key="NSColor" red="0.0045642274798769478" green="0.0045642274798769478" blue="0.0045642274798769478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <font key="NSFont" size="13" name="Thonburi"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
                             <fragment content="started following you">
                                 <attributes>
-                                    <color key="NSColor" red="0.0045642274798769478" green="0.0045642274798769478" blue="0.0045642274798769478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <font key="NSFont" size="13" name="Thonburi"/>
                                     <font key="NSOriginalFont" metaFont="system" size="17"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
-                            <fragment content=" ">
+                            <fragment>
+                                <string key="content"> 1d Yasiru Priyadarshana started following you 1d Yasiru Priyadarshana started following you 1d Yasiru Priyadarshana started following you 1d Yasiru Priyadarshana started following you 1d</string>
                                 <attributes>
-                                    <color key="NSColor" red="0.0045642274798769478" green="0.0045642274798769478" blue="0.0045642274798769478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="1d ">
-                                <attributes>
-                                    <color key="NSColor" red="0.70122998170178352" green="0.70122998170178352" blue="0.70122998170178352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="Yasiru Priyadarshana">
-                                <attributes>
-                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi-Bold"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" started following you ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="1d ">
-                                <attributes>
-                                    <color key="NSColor" red="0.70122998170178352" green="0.70122998170178352" blue="0.70122998170178352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="Yasiru Priyadarshana">
-                                <attributes>
-                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi-Bold"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" started following you ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="1d ">
-                                <attributes>
-                                    <color key="NSColor" red="0.70122998170178352" green="0.70122998170178352" blue="0.70122998170178352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="Yasiru Priyadarshana">
-                                <attributes>
-                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi-Bold"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" started following you ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="1d ">
-                                <attributes>
-                                    <color key="NSColor" red="0.70122998170178352" green="0.70122998170178352" blue="0.70122998170178352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="Yasiru Priyadarshana">
-                                <attributes>
-                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi-Bold"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" started following you ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0045599999999999998" green="0.0045599999999999998" blue="0.0045599999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="13" name="Thonburi"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="1d">
-                                <attributes>
-                                    <color key="NSColor" red="0.70122998170178352" green="0.70122998170178352" blue="0.70122998170178352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <font key="NSFont" size="13" name="Thonburi"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
@@ -175,8 +85,9 @@
                     <constraint firstAttribute="trailing" secondItem="uGT-Fk-sJe" secondAttribute="trailing" constant="15" id="AMA-Cv-ixB"/>
                     <constraint firstItem="cQi-OE-z9L" firstAttribute="top" secondItem="r4U-YN-Gl3" secondAttribute="top" constant="10" id="IqB-xh-Utb"/>
                     <constraint firstItem="T15-zh-KdN" firstAttribute="top" secondItem="r4U-YN-Gl3" secondAttribute="top" constant="10" id="KLn-Pm-lrg"/>
-                    <constraint firstAttribute="bottom" secondItem="T15-zh-KdN" secondAttribute="bottom" constant="15" id="NTw-06-bpz"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="T15-zh-KdN" secondAttribute="bottom" constant="15" id="NTw-06-bpz"/>
                     <constraint firstItem="T15-zh-KdN" firstAttribute="leading" secondItem="TXs-95-YXa" secondAttribute="trailing" constant="15" id="TtM-nQ-CEQ"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TXs-95-YXa" secondAttribute="bottom" constant="10" id="buu-Z3-G18"/>
                     <constraint firstItem="uGT-Fk-sJe" firstAttribute="leading" secondItem="T15-zh-KdN" secondAttribute="trailing" constant="10" id="mhz-Q2-lrE"/>
                     <constraint firstItem="TXs-95-YXa" firstAttribute="leading" secondItem="r4U-YN-Gl3" secondAttribute="leading" constant="15" id="nRz-fJ-UmO"/>
                     <constraint firstItem="TXs-95-YXa" firstAttribute="top" secondItem="r4U-YN-Gl3" secondAttribute="top" constant="10" id="nlL-jP-kJu"/>

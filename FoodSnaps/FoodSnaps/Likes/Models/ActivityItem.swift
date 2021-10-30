@@ -12,4 +12,7 @@ struct ActivityItem {
     var profileImageUrl: String?
     var postImageUrl: String?
     var activityDescription: String?
+    var name: String?
+    var nameStartingLocation: Int?
+    var time: String?
 }

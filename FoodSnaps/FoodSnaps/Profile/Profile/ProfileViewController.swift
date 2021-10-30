@@ -20,7 +20,9 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var scrollView: UIScrollView!
-    
+    @IBOutlet weak var profilePicContainer: UIImageView!
+    @IBOutlet weak var btnEdit: UIButton!
+
     override func viewDidLoad() {
         configUI()
     }
@@ -39,10 +41,15 @@ class ProfileViewController: UIViewController {
     }
     
     private func configProfilePic() {
-        imgProfilePic.layer.cornerRadius = 50
-        imgProfilePic.layer.borderWidth = 2
-        imgProfilePic.layer.borderColor = UIColor.init(named: "avatarBorder")?.cgColor
-        imgProfilePic.layer.masksToBounds = true
+        profilePicContainer.layer.cornerRadius = 50
+        profilePicContainer.layer.borderWidth = 2
+        profilePicContainer.layer.borderColor = UIColor.init(named: "avatarBorder")?.cgColor
+        profilePicContainer.layer.masksToBounds = true
+        
+        let circlePath = UIBezierPath.init(arcCenter: CGPoint(x: btnEdit.bounds.size.width / 2, y: btnEdit.bounds.size.height - (profilePicContainer.bounds.height/2)), radius: (profilePicContainer.layer.bounds.height / 2) - 2, startAngle: 0.0, endAngle: CGFloat.pi, clockwise: true)
+        let circleShape = CAShapeLayer()
+        circleShape.path = circlePath.cgPath
+        btnEdit.layer.mask = circleShape
     }
     
     private func configureSegmentedControl() {

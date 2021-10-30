@@ -35,7 +35,17 @@ class LikesTableViewCell: UITableViewCell {
         imgProfilePic.layer.cornerRadius = 30
     }
     
-    func set(descriptionText: String) {
-        self.lblDescription.text = descriptionText
+    func set(name: String, nameRange: NSRange, descriptionText: String, time: String, timeRange: NSRange) {
+        let attributedString = NSMutableAttributedString(string:name + " " + descriptionText + " " + time)
+        let nameAttributes: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key.font: UIFont.boldBodyText.withSize(TextSize.body.rawValue)
+        ]
+        let timeAttributes: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key.font: UIFont.normalBodyText.withSize(TextSize.body.rawValue),
+            NSAttributedString.Key.foregroundColor: UIColor.gray
+        ]
+        attributedString.addAttributes(nameAttributes as [NSAttributedString.Key: Any], range: nameRange)
+        attributedString.addAttributes(timeAttributes as [NSAttributedString.Key: Any], range: timeRange)
+        self.lblDescription.attributedText = attributedString
     }
 }

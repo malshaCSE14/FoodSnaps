@@ -10,11 +10,23 @@ import RxSwift
 import RxCocoa
 
 enum settings: String, CaseIterable {
-//    case editProfilePic
-//    case editUserName
+    case editPersonalDetails = "Edit Personal Details"
     case editPassword = "Edit Password"
-//    case editBio
+    case about = "About"
     case logout = "Logout"
+    
+    var image: String {
+        switch self {
+        case .editPersonalDetails:
+            return "person"
+        case .editPassword:
+            return "lock"
+        case .about:
+            return "character.book.closed"
+        case .logout:
+            return "square.and.arrow.up"
+        }
+    }
 }
 
 class SettingsViewController: UIViewController {
@@ -52,7 +64,7 @@ class SettingsViewController: UIViewController {
         let elements = settings.allCases
         Observable.just(elements).bind(to: tblSettings.rx.items) { tableView, row, element in
             let cell = UITableViewCell()
-            cell.imageView?.image = #imageLiteral(resourceName: "recipe")
+            cell.imageView?.image = UIImage(named: element.image)
             cell.textLabel?.text = element.rawValue
             cell.accessoryType = .disclosureIndicator
             return cell

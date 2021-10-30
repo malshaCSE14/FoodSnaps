@@ -27,21 +27,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OC2-mt-HqI" customClass="TwoColumnCollectionView" customModule="FoodSnaps" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                                <rect key="frame" x="0.0" y="204" width="414" height="658"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="scrollable" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="AuU-hR-oZv">
+                                <rect key="frame" x="0.0" y="143" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tWs-M1-mOt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OC2-mt-HqI" firstAttribute="top" secondItem="zgk-Ya-i9z" secondAttribute="bottom" id="U7m-rm-wpz"/>
+                            <constraint firstAttribute="trailing" secondItem="AuU-hR-oZv" secondAttribute="trailing" id="44z-Zv-Kyo"/>
+                            <constraint firstItem="OC2-mt-HqI" firstAttribute="top" secondItem="AuU-hR-oZv" secondAttribute="bottom" constant="5" id="LOc-iE-fML"/>
                             <constraint firstItem="tWs-M1-mOt" firstAttribute="bottom" secondItem="OC2-mt-HqI" secondAttribute="bottom" id="WqK-2J-wT2"/>
                             <constraint firstItem="OC2-mt-HqI" firstAttribute="leading" secondItem="tWs-M1-mOt" secondAttribute="leading" id="bPF-IY-m0c"/>
                             <constraint firstItem="tWs-M1-mOt" firstAttribute="trailing" secondItem="OC2-mt-HqI" secondAttribute="trailing" id="h4O-rc-Pho"/>
+                            <constraint firstItem="AuU-hR-oZv" firstAttribute="leading" secondItem="tWs-M1-mOt" secondAttribute="leading" id="iNE-u8-PIY"/>
                             <constraint firstItem="zgk-Ya-i9z" firstAttribute="leading" secondItem="tWs-M1-mOt" secondAttribute="leading" constant="15" id="oFg-kN-7hB"/>
+                            <constraint firstItem="AuU-hR-oZv" firstAttribute="top" secondItem="zgk-Ya-i9z" secondAttribute="bottom" constant="5" id="s6M-TS-haT"/>
                             <constraint firstItem="tWs-M1-mOt" firstAttribute="trailing" secondItem="zgk-Ya-i9z" secondAttribute="trailing" constant="15" id="uMs-tL-NDH"/>
                             <constraint firstItem="zgk-Ya-i9z" firstAttribute="top" secondItem="tWs-M1-mOt" secondAttribute="top" id="z18-Yo-f0m"/>
                         </constraints>
@@ -50,6 +57,7 @@
                     <navigationItem key="navigationItem" id="333-5C-o0U"/>
                     <connections>
                         <outlet property="collectionView" destination="OC2-mt-HqI" id="4yd-5R-kEa"/>
+                        <outlet property="searchBar" destination="AuU-hR-oZv" id="Ulh-Ht-ekx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFP-hA-1qw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

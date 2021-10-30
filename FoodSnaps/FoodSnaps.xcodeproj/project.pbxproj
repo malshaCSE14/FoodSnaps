@@ -38,6 +38,8 @@
 		F17079E4271BD0D900CDBABE /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17079E3271BD0D900CDBABE /* AppEnums.swift */; };
 		F17079E8271C0BE000CDBABE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17079E7271C0BE000CDBABE /* SettingsViewController.swift */; };
 		F17079EC271C0BEC00CDBABE /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17079EB271C0BEC00CDBABE /* SettingsViewController.xib */; };
+		F17295F2272D2717009BAE29 /* UIFont+Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17295F1272D2717009BAE29 /* UIFont+Fonts.swift */; };
+		F17295F5272D2844009BAE29 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17295F4272D2844009BAE29 /* AppFonts.swift */; };
 		F18EA78827045F0C00E1A6EA /* SnapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18EA78727045F0C00E1A6EA /* SnapCollectionViewCell.swift */; };
 		F18EA78B270466FA00E1A6EA /* SnapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18EA78A270466FA00E1A6EA /* SnapCollectionViewCell.xib */; };
 		F18EA790270485D800E1A6EA /* LikesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18EA78F270485D800E1A6EA /* LikesTableViewCell.swift */; };
@@ -88,6 +90,8 @@
 		F17079E3271BD0D900CDBABE /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
 		F17079E7271C0BE000CDBABE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F17079EB271C0BEC00CDBABE /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		F17295F1272D2717009BAE29 /* UIFont+Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Fonts.swift"; sourceTree = "<group>"; };
+		F17295F4272D2844009BAE29 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		F18EA78727045F0C00E1A6EA /* SnapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCollectionViewCell.swift; sourceTree = "<group>"; };
 		F18EA78A270466FA00E1A6EA /* SnapCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnapCollectionViewCell.xib; sourceTree = "<group>"; };
 		F18EA78F270485D800E1A6EA /* LikesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesTableViewCell.swift; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 				F142B7F52700525500A031DF /* Extensions */,
 				F1F0E9102715675300511DB6 /* Paginator.swift */,
 				F17079E3271BD0D900CDBABE /* AppEnums.swift */,
+				F17295F4272D2844009BAE29 /* AppFonts.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			children = (
 				F142B7F22700524E00A031DF /* AppDelegate+Keyboard.swift */,
 				F1F0E90D2715667D00511DB6 /* UIScrollView+Utils.swift */,
+				F17295F1272D2717009BAE29 /* UIFont+Fonts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -506,6 +512,7 @@
 				F157BF5D27118A87001732E5 /* Photo.swift in Sources */,
 				F142B821270062CA00A031DF /* LikesViewController.swift in Sources */,
 				F1F0E9112715675300511DB6 /* Paginator.swift in Sources */,
+				F17295F5272D2844009BAE29 /* AppFonts.swift in Sources */,
 				F142B7D226FF15C200A031DF /* ViewController.swift in Sources */,
 				F18EA78827045F0C00E1A6EA /* SnapCollectionViewCell.swift in Sources */,
 				F142B7F32700524E00A031DF /* AppDelegate+Keyboard.swift in Sources */,
@@ -520,6 +527,7 @@
 				F1F0E917271568B900511DB6 /* PreviewViewModel.swift in Sources */,
 				F142B818270061F100A031DF /* DashboardViewController.swift in Sources */,
 				F142B81D2700627000A031DF /* DiscoverViewController.swift in Sources */,
+				F17295F2272D2717009BAE29 /* UIFont+Fonts.swift in Sources */,
 				F142B7CE26FF15C200A031DF /* AppDelegate.swift in Sources */,
 				F18EA81A2709D79300E1A6EA /* TwoColumnCollectionView.swift in Sources */,
 				F18EA797270494B200E1A6EA /* ActivityItem.swift in Sources */,

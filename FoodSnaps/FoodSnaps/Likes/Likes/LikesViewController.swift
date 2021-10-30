@@ -60,11 +60,11 @@ class LikesViewController: UIViewController, UITableViewDelegate {
     }
     
     private func bindData() {
-        let activity1 = ActivityItem(id: "1")
-        let activity2 = ActivityItem(id: "2")
-        let activity3 = ActivityItem(id: "3")
+        let activity1 = ActivityItem(id: "1", activityDescription: "started following you", name: "Yasiru Priyadarshana", time: "1d")
+        let activity2 = ActivityItem(id: "2", activityDescription: "started following you 1d Yasiru Priyadarshana started following you", name: "Yasiru Priyadarshana", time: "1d")
+        let activity3 = ActivityItem(id: "3", activityDescription: "started following you 1d Yasiru Priyadarshana started following you", name: "Yasiru Priyadarshana", time: "1d")
         let elements = [activity1, activity2, activity3, activity1, activity2, activity3, activity1, activity2, activity3, activity1, activity2, activity3]
-        Observable.just(elements).bind(to: tblLikes.rx.items) { tableView, row, _ in
+        Observable.just(elements).bind(to: tblLikes.rx.items) { tableView, row, element in
             tableView.invalidateIntrinsicContentSize()
             tableView.layoutIfNeeded()
             let indexPath = IndexPath(row: row, section: 0)
@@ -76,7 +76,13 @@ class LikesViewController: UIViewController, UITableViewDelegate {
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier:  LikesTableViewCell.cellIdentifier, for: indexPath) as! LikesTableViewCell
                 cell.layoutIfNeeded()
-                cell.set(descriptionText: "Yasiru Priyadarshana started following you 1d Yasiru Priyadarshana started following you 1d ")
+                cell.set(name: element.name ?? "",
+                         nameRange: NSRange(location: element.nameStartingLocation ?? 0,
+                                            length: element.name?.count ?? 0),
+                         descriptionText: element.activityDescription ?? "",
+                         time: element.time ?? "",
+                         timeRange: NSRange(location: (element.name?.count ?? 0) + (element.activityDescription?.count ?? 0) + 2,
+                                            length: element.time?.count ?? 0))
                 return cell
             }
         }.disposed(by: disposeBag)
