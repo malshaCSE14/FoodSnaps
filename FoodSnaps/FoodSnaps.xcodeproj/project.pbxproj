@@ -168,7 +168,7 @@
 				F157BF6027119755001732E5 /* Photos.xcassets */,
 				F142B80127005EE200A031DF /* Home */,
 				F142B80227005EEA00A031DF /* Discover */,
-				F142B80327005EFB00A031DF /* Likes */,
+				F142B80327005EFB00A031DF /* Notifications */,
 				F142B80027005ED800A031DF /* Profile */,
 				F142B7FF27005EC300A031DF /* Assets */,
 				F142B7FC27005E9E00A031DF /* Storyboards */,
@@ -252,14 +252,14 @@
 			path = Discover;
 			sourceTree = "<group>";
 		};
-		F142B80327005EFB00A031DF /* Likes */ = {
+		F142B80327005EFB00A031DF /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
 				F18EA7952704949E00E1A6EA /* Models */,
 				F142B82F2700758400A031DF /* NotificationsStoryboard.storyboard */,
 				F142B81F270062B400A031DF /* Notifications */,
 			);
-			path = Likes;
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		F142B816270061D600A031DF /* Dashboard */ = {
