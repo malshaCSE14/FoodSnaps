@@ -1,5 +1,5 @@
 //
-//  LikesTableViewCell.swift
+//  NotificationsTableViewCell.swift
 //  FoodSnaps
 //
 //  Created by Malsha Hansini on 29/09/2021.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-class LikesTableViewCell: UITableViewCell {
+class NotificationsTableViewCell: UITableViewCell {
     @IBOutlet weak var imgProfilePic: UIImageView!
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var imgPost: UIImageView!
     @IBOutlet weak var btnFollow: UIButton!
     
-    static let cellIdentifier = "LikesTableViewCell"
+    static let cellIdentifier = "NotificationsTableViewCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()

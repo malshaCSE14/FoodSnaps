@@ -1,5 +1,5 @@
 //
-//  LikesViewController.swift
+//  NotificationsViewController.swift
 //  FoodSnaps
 //
 //  Created by Malsha Hansini on 26/09/2021.
@@ -9,16 +9,16 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class LikesViewController: UIViewController, UITableViewDelegate {
+class NotificationsViewController: UIViewController, UITableViewDelegate {
     // MARK: IB outlets
-    @IBOutlet weak var tblLikes: UITableView!
-    @IBOutlet weak var tblLikesHeight: NSLayoutConstraint!
+    @IBOutlet weak var tblNotifications: UITableView!
+    @IBOutlet weak var tblNotificationsHeight: NSLayoutConstraint!
     
     // MARK: Rx variables
     private let disposeBag = DisposeBag()
     
     // MARK: Properties
-    private let viewModel = LikesViewModel()
+    private let viewModel = NotificationsViewModel()
     private let estimatedRowHeight = 74.0
     
     override func viewDidLoad() {
@@ -30,11 +30,11 @@ class LikesViewController: UIViewController, UITableViewDelegate {
     }
     
     private func configTable() {
-        let nib = UINib(nibName: LikesTableViewCell.cellIdentifier, bundle: nil)
-        tblLikes.delegate = self
-        tblLikes.register(nib, forCellReuseIdentifier: LikesTableViewCell.cellIdentifier)
-        tblLikes.rowHeight = UITableView.automaticDimension
-        tblLikes.estimatedRowHeight = CGFloat(self.estimatedRowHeight)
+        let nib = UINib(nibName: NotificationsTableViewCell.cellIdentifier, bundle: nil)
+        tblNotifications.delegate = self
+        tblNotifications.register(nib, forCellReuseIdentifier: NotificationsTableViewCell.cellIdentifier)
+        tblNotifications.rowHeight = UITableView.automaticDimension
+        tblNotifications.estimatedRowHeight = CGFloat(self.estimatedRowHeight)
     }
     
     // MARK: Pagination
@@ -55,7 +55,7 @@ class LikesViewController: UIViewController, UITableViewDelegate {
         //                }
         //            }).disposed(by: disposeBag)
         
-        tblLikes.reachedBottom
+        tblNotifications.reachedBottom
             .bind(to: viewModel.paginator!.loadNextPageTrigger).disposed(by: disposeBag)
     }
     
@@ -64,7 +64,7 @@ class LikesViewController: UIViewController, UITableViewDelegate {
         let activity2 = ActivityItem(id: "2", activityDescription: "started following you 1d Yasiru Priyadarshana started following you", name: "Yasiru Priyadarshana", time: "1d")
         let activity3 = ActivityItem(id: "3", activityDescription: "started following you 1d Yasiru Priyadarshana started following you", name: "Yasiru Priyadarshana", time: "1d")
         let elements = [activity1, activity2, activity3, activity1, activity2, activity3, activity1, activity2, activity3, activity1, activity2, activity3]
-        Observable.just(elements).bind(to: tblLikes.rx.items) { tableView, row, element in
+        Observable.just(elements).bind(to: tblNotifications.rx.items) { tableView, row, element in
             tableView.invalidateIntrinsicContentSize()
             tableView.layoutIfNeeded()
             let indexPath = IndexPath(row: row, section: 0)
@@ -74,7 +74,7 @@ class LikesViewController: UIViewController, UITableViewDelegate {
                 cell.accessoryType = .disclosureIndicator
                 return cell
             } else {
-                let cell = tableView.dequeueReusableCell(withIdentifier:  LikesTableViewCell.cellIdentifier, for: indexPath) as! LikesTableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier:  NotificationsTableViewCell.cellIdentifier, for: indexPath) as! NotificationsTableViewCell
                 cell.layoutIfNeeded()
                 cell.set(name: element.name ?? "",
                          nameRange: NSRange(location: element.nameStartingLocation ?? 0,
@@ -88,13 +88,13 @@ class LikesViewController: UIViewController, UITableViewDelegate {
         }.disposed(by: disposeBag)
         
         
-        //        tblLikes.rx
+        //        tblNotifications.rx
         //            .observe(CGSize.self, "contentSize")
         //            .distinctUntilChanged()
         //            .observe(on: MainScheduler.instance)
         //            .subscribe(onNext: { [weak self] size in
         //                if (size?.height ?? 0.0) > 0 {
-        //                    self?.tblLikesHeight.constant = (size?.height ?? 0) - 5
+        //                    self?.tblNotificationsHeight.constant = (size?.height ?? 0) - 5
         //                }
         //            }).disposed(by: disposeBag)
     }

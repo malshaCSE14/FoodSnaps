@@ -1,5 +1,5 @@
 //
-//  LikesViewModel.swift
+//  NotificationsViewModel.swift
 //  FoodSnaps
 //
 //  Created by Malsha Hansini on 16/10/2021.
@@ -8,7 +8,7 @@
 import RxSwift
 import RxCocoa
 
-class LikesViewModel: PaginateProvider {
+class NotificationsViewModel: PaginateProvider {
     // MARK: - Properties
     let pageSize: Int = 10
     var paginator: Paginator<String>?
