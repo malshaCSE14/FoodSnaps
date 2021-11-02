@@ -8,6 +8,11 @@
 import RxSwift
 import RxCocoa
 
+enum NotificationType {
+    case follow
+    case reaction
+}
+
 class NotificationsViewModel: PaginateProvider {
     // MARK: - Properties
     let pageSize: Int = 10

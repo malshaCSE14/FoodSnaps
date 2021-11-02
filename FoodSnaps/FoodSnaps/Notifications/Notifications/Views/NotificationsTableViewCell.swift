@@ -11,7 +11,7 @@ class NotificationsTableViewCell: UITableViewCell {
     @IBOutlet weak var imgProfilePic: UIImageView!
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var imgPost: UIImageView!
-    @IBOutlet weak var btnFollow: UIButton!
+    @IBOutlet weak var descriptionRightSpace: NSLayoutConstraint!
     
     static let cellIdentifier = "NotificationsTableViewCell"
     
@@ -26,16 +26,19 @@ class NotificationsTableViewCell: UITableViewCell {
     }
     
     private func nibSetup() {
-        configLeftView()
-    }
-    
-    private func configLeftView(follow: Bool = false) {
-        btnFollow.isHidden = !follow
-        imgPost.isHidden = follow
         imgProfilePic.layer.cornerRadius = 30
     }
     
-    func set(name: String, nameRange: NSRange, descriptionText: String, time: String, timeRange: NSRange) {
+    private func configRightView(imageUrl: String?) {
+        if let url = imageUrl {
+            imgPost.isHidden = false
+        } else {
+            imgPost.isHidden = true
+        }
+        descriptionRightSpace.constant = (imageUrl != nil) ? 85 : 15
+    }
+    
+    func set(name: String, nameRange: NSRange, descriptionText: String, time: String, timeRange: NSRange, imageUrl: String?) {
         let attributedString = NSMutableAttributedString(string:name + " " + descriptionText + " " + time)
         let nameAttributes: [NSAttributedString.Key: Any] = [
             NSAttributedString.Key.font: UIFont.boldBodyText.withSize(TextSize.body.rawValue)
@@ -47,5 +50,6 @@ class NotificationsTableViewCell: UITableViewCell {
         attributedString.addAttributes(nameAttributes as [NSAttributedString.Key: Any], range: nameRange)
         attributedString.addAttributes(timeAttributes as [NSAttributedString.Key: Any], range: timeRange)
         self.lblDescription.attributedText = attributedString
+        configRightView(imageUrl: imageUrl)
     }
 }

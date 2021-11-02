@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="-797" y="-455"/>
         </scene>
-        <!--LikesStoryboard-->
+        <!--NotificationsStoryboard-->
         <scene sceneID="UnO-JH-CIE">
             <objects>
-                <viewControllerPlaceholder storyboardName="LikesStoryboard" id="ohg-EK-KP1" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="NotificationsStoryboard" id="ohg-EK-KP1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" id="Fg1-Y7-0fE"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mrF-M4-YPd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

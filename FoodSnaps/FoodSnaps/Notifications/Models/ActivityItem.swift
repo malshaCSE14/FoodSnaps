@@ -15,4 +15,5 @@ struct ActivityItem {
     var name: String?
     var nameStartingLocation: Int?
     var time: String?
+    var notificationType: NotificationType?
 }

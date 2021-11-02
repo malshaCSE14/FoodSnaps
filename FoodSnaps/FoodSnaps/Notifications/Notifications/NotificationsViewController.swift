@@ -62,7 +62,7 @@ class NotificationsViewController: UIViewController, UITableViewDelegate {
     private func bindData() {
         let activity1 = ActivityItem(id: "1", activityDescription: "started following you", name: "Yasiru Priyadarshana", time: "1d")
         let activity2 = ActivityItem(id: "2", activityDescription: "started following you 1d Yasiru Priyadarshana started following you", name: "Yasiru Priyadarshana", time: "1d")
-        let activity3 = ActivityItem(id: "3", activityDescription: "started following you 1d Yasiru Priyadarshana started following you", name: "Yasiru Priyadarshana", time: "1d")
+        let activity3 = ActivityItem(id: "3", postImageUrl: "aa", activityDescription: "liked your photo", name: "Yasiru Priyadarshana", time: "11min")
         let elements = [activity1, activity2, activity3, activity1, activity2, activity3, activity1, activity2, activity3, activity1, activity2, activity3]
         Observable.just(elements).bind(to: tblNotifications.rx.items) { tableView, row, element in
             tableView.invalidateIntrinsicContentSize()
@@ -82,7 +82,7 @@ class NotificationsViewController: UIViewController, UITableViewDelegate {
                          descriptionText: element.activityDescription ?? "",
                          time: element.time ?? "",
                          timeRange: NSRange(location: (element.name?.count ?? 0) + (element.activityDescription?.count ?? 0) + 2,
-                                            length: element.time?.count ?? 0))
+                                            length: element.time?.count ?? 0), imageUrl: element.postImageUrl)
                 return cell
             }
         }.disposed(by: disposeBag)
